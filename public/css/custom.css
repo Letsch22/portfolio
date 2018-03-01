@@ -1,0 +1,128 @@
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/* colors (see http://colormind.io/bootstrap/): #F7F5F4, #8BD7F8, #222222, #8899AC, #23386D */
+
+.header-links {
+  background-color: transparent !important;
+  border: none !important;
+  position: relative;
+  top: 10%;
+  transform: translateY(-10%);
+}
+
+.title-content {
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+.title-content > .huge {
+  font-size: 4em !important;
+  color: #8BD7F8 !important;
+}
+
+.title-content > .large {
+  font-size: 3em !important;
+  font-family: 'Dancing Script' !important;
+  color: #F7F5F4 !important;
+}
+
+.menu-header {
+  background-color: #222222 !important;
+}
+
+.ui.inverted.teal.menu .active.item {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  animation: animatedBackground 90s linear infinite;
+  background-color: #222222;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%235c5a61' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.myself {
+  padding-top: 20vh;
+  padding-bottom: 4em;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  height: 75vh;
+  background-blend-mode: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5));
+}
+
+.myself .header {
+  font-size: 4em !important;
+  font-family: 'Dancing Script';
+  color: #F7F5F4;
+}
+
+.myself p {
+  font-size: 1.25em;
+}
+
+.resume {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.card .header {
+  color: #23386D !important;
+}
+
+.resume .item i {
+  font-family: 'Playfair Display', serif;
+}
+
+.resume p i {
+  font-family: 'Playfair Display', serif;
+}
+
+.resume-header .header {
+  font-family: 'Dancing Script' !important;
+  font-size: 3em !important;
+  color: #23386D !important;
+}
+
+.resume .list {
+  display: block !important;
+}
+
+.devicons > .item {
+  font-size: 3em !important;
+}
+
+.devicons .item + .item {
+  margin-left: 0.15em !important;
+}
+
+.projects {
+  background-color: #23386D;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%231d2e59' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+  animation: animatedBackground 90s linear infinite;
+}
+
+.projects > .container > .header {
+  color: #F7F5F4;
+  font-family: 'Dancing Script';
+  font-size: 3.5em !important;
+  padding: 0.25em;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

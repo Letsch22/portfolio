@@ -1,0 +1,93 @@
+[{
+        "id": 1,
+        "name": "Education",
+        "segments": [{
+            "title": "NORTHWESTERN UNIVERSITY",
+            "lists": [
+                [{
+                        "isitalics": true,
+                        "content": "Bachelor of Arts"
+                    },
+                    {
+                        "isitalics": false,
+                        "content": "Sep 2013 \u2014 Jun 2017"
+                    }
+                ],
+                [{
+                        "isitalics": false,
+                        "content": "Computer Science major"
+                    },
+                    {
+                        "isitalics": false,
+                        "content": "Economics minor"
+                    },
+                    {
+                        "isitalics": false,
+                        "content": "3.7 GPA"
+                    }
+                ]
+
+            ]
+        }]
+    },
+    {
+        "id": 2,
+        "name": "Experience",
+        "segments": [{
+                "title": "ORACLE",
+                "lists": [
+                    [{
+                            "isitalics": true,
+                            "content": "Associate Software Engineer"
+                        },
+                        {
+                            "isitalics": false,
+                            "content": "Aug 2017 \u2014 Present"
+                        }
+                    ],
+                    [{
+                            "isitalics": false,
+                            "content": "NetSuite Global Business Unit"
+                        },
+                        {
+                            "isitalics": false,
+                            "content": "Platform Development Process Team"
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "NETSUITE",
+                "lists": [
+                    [{
+                            "isitalics": true,
+                            "content": "Software Engineering Intern"
+                        },
+                        {
+                            "isitalics": false,
+                            "content": "Jun 2016 \u2014 Sep 2016"
+                        }
+                    ],
+                    [{
+                        "isitalics": false,
+                        "content": "Platform Development Process Team"
+                    }]
+                ]
+            },
+            {
+                "title": "EXOSITE",
+                "lists": [
+                    [{
+                            "isitalics": true,
+                            "content": "Support Services Intern"
+                        },
+                        {
+                            "isitalics": false,
+                            "content": "Jun 2015 \u2014 Sep 2015"
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+]
