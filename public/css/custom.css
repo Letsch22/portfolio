@@ -148,12 +148,13 @@
   font-size: 3.5em !important;
 }
 
-.footer > .container > .container > i {
+.footer .icons i {
   padding-top: 0.15em;
+  margin-right: 0.25em;
 }
 
 .footer .massive {
-  font-size: 5em !important;
+  font-size: 4em !important;
 }
 
 @keyframes App-logo-spin {

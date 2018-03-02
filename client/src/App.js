@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Scrollspy from 'react-scrollspy'
+import Obfuscate from 'react-obfuscate'
 import { Button, Card, Container, Grid, Header, Icon, Label, List, Menu, Popup, Segment, Sticky, Transition, Visibility } from 'semantic-ui-react';
 
 //TODO items parameter shorthand
@@ -35,7 +36,6 @@ class App extends Component {
                 <Resume/>
                 <Projects/>
                 <Footer/>
-                {/* TODO: footer */}
             </div>
         );
     }
@@ -43,36 +43,27 @@ class App extends Component {
 
 class MenuItems extends Component {
 
-    state = {items: ["home", "myself", "resume", "projects"], icons: []}
-
-    componentDidMount() {
-        fetch("/json/icons")
-        .then(res => res.json())
-        .then(icons => this.setState({icons}));
-    }
-
-    render() {
-        return(
-            <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
-                {this.state.items.map((item, i) => this.renderItem(item, i))}
-                <Menu.Menu position="right">
-                    {this.state.icons.map((icon, i) => this.renderIcon(icon, i))}
-                </Menu.Menu>
-            </Scrollspy>
-        )
-    }
+    state = {items: ["home", "myself", "resume", "projects"]}
 
     renderItem(name, i) {
         return(<Menu.Item key={i} link href={"#"+name}>{name.toUpperCase()}</Menu.Item>)
     }
 
-    renderIcon(icon, i) {
-        if (this.props.isHeader){
+    render() {
+        if (this.props.isHeader) {
             return(
-                <Menu.Item key={i} icon link href={icon.link} target={icon.name}><Icon key={i} name={icon.name} size="big"/></Menu.Item>
+                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
+                    {this.state.items.map((item, i) => this.renderItem(item, i))}
+                    <IconSet isFooter={false}/>
+                </Scrollspy>
+            )
+        } else {
+            return(
+                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
+                    {this.state.items.map((item, i) => this.renderItem(item, i))}
+                </Scrollspy>
             )
         }
-
     }
 }
 
@@ -308,6 +299,20 @@ class Projects extends Component {
 
 class Footer extends Component {
 
+    render() {
+        return(
+            <div className="footer">
+                <Button color="grey" icon circular size="huge" href="#home"><Icon size="large" name="arrow up"/></Button>
+                <Container textAlign="center">
+                    <Header>Thanks for visiting!</Header>
+                    <IconSet isFooter={true}/>
+                </Container>
+            </div>
+        )
+    }
+}
+
+class IconSet extends Component {
     state = {icons: []}
 
     componentDidMount() {
@@ -316,27 +321,48 @@ class Footer extends Component {
         .then(icons => this.setState({icons}));
     }
 
-    renderIcon(icon, i) {
-        return(
-            <a key={i} href={icon.link} target={icon.name}>
-                <Icon key={i} color="teal" link name={icon.name} size="massive"/>
-            </a>
-        )
+    renderFooterIcon(icon, i) {
+        if (icon.name==="mail") {
+            return(
+                <Obfuscate key={i} email={icon.link}>
+                    <Icon key={i} color="teal" link name={icon.name} size="massive"/>
+                </Obfuscate>
+            )
+        } else {
+            return(
+
+                <a key={i} href={icon.link} target={icon.name}>
+                    <Icon key={i} color="teal" link name={icon.name} size="massive"/>
+                </a>
+            )
+        }
+    }
+
+    renderMenuIcon(icon, i) {
+        if (icon.name==="mail") {
+            return(
+                <Obfuscate key={i} email={icon.link} className="icon link item"><Icon key={i} name={icon.name} size="big"/></Obfuscate>
+            )
+        } else {
+            return(
+                <Menu.Item key={i} icon link href={icon.link} target={icon.name}><Icon key={i} name={icon.name} size="big"/></Menu.Item>
+            )
+        }
     }
 
     render() {
-        return(
-            <div className="footer">
-                <Button color="grey" icon circular size="huge" href="#home"><Icon size="large" name="arrow up"/></Button>
-                <Container textAlign="center">
-                    <Header>Thanks for visiting!</Header>
-                    <Container text>
-                        {this.state.icons.map((icon, i) => this.renderIcon(icon, i))}
-                    </Container>
-                </Container>
-            </div>
-        )
+        if (this.props.isFooter) {
+            return(
+                <Container text className="icons">{this.state.icons.map((icon, i) => this.renderFooterIcon(icon, i))}</Container>
+            )
+        } else {
+            return(
+                <Menu.Menu position="right">{this.state.icons.map((icon, i) => this.renderMenuIcon(icon, i))}</Menu.Menu>
+            )
+
+        }
     }
+
 }
 
 export default App;
