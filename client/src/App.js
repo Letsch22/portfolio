@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Scrollspy from 'react-scrollspy'
-import { Card, Container, Grid, Header, Icon, Label, List, Menu, Popup, Segment, Sticky, Transition, Visibility } from 'semantic-ui-react';
+import { Button, Card, Container, Grid, Header, Icon, Label, List, Menu, Popup, Segment, Sticky, Transition, Visibility } from 'semantic-ui-react';
 
 //TODO items parameter shorthand
 
@@ -34,6 +34,7 @@ class App extends Component {
                 <About/>
                 <Resume/>
                 <Projects/>
+                <Footer/>
                 {/* TODO: footer */}
             </div>
         );
@@ -41,15 +42,21 @@ class App extends Component {
 }
 
 class MenuItems extends Component {
-    items = ["home", "myself", "resume", "projects"];
-    icons = [{name: "linkedin", link:"https://www.linkedin.com/in/dpletscher/"}, {name: "github", link: "https://github.com/Letsch22"}]
+
+    state = {items: ["home", "myself", "resume", "projects"], icons: []}
+
+    componentDidMount() {
+        fetch("/json/icons")
+        .then(res => res.json())
+        .then(icons => this.setState({icons}));
+    }
 
     render() {
         return(
-            <Scrollspy items={this.items} currentClassName="active" componentTag="div" className="ui menu-items container">
-                {this.items.map((item, i) => this.renderItem(item, i))}
+            <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
+                {this.state.items.map((item, i) => this.renderItem(item, i))}
                 <Menu.Menu position="right">
-                    {this.icons.map((icon, i) => this.renderIcon(icon, i))}
+                    {this.state.icons.map((icon, i) => this.renderIcon(icon, i))}
                 </Menu.Menu>
             </Scrollspy>
         )
@@ -296,6 +303,39 @@ class Projects extends Component {
                 </Container>
             </div>
         );
+    }
+}
+
+class Footer extends Component {
+
+    state = {icons: []}
+
+    componentDidMount() {
+        fetch("/json/icons")
+        .then(res => res.json())
+        .then(icons => this.setState({icons}));
+    }
+
+    renderIcon(icon, i) {
+        return(
+            <a key={i} href={icon.link} target={icon.name}>
+                <Icon key={i} color="teal" link name={icon.name} size="massive"/>
+            </a>
+        )
+    }
+
+    render() {
+        return(
+            <div className="footer">
+                <Button color="grey" icon circular size="huge" href="#home"><Icon size="large" name="arrow up"/></Button>
+                <Container textAlign="center">
+                    <Header>Thanks for visiting!</Header>
+                    <Container text>
+                        {this.state.icons.map((icon, i) => this.renderIcon(icon, i))}
+                    </Container>
+                </Container>
+            </div>
+        )
     }
 }
 

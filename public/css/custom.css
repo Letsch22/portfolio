@@ -74,8 +74,8 @@
 }
 
 .resume {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .card .header {
@@ -112,6 +112,8 @@
   background-color: #23386D;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%231d2e59' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
   animation: animatedBackground 90s linear infinite;
+  padding-bottom: 6em;
+  padding-top: 3em;
 }
 
 .projects > .container > .header {
@@ -120,6 +122,38 @@
   font-size: 3.5em !important;
   padding: 0.25em;
   text-align: center;
+}
+
+.footer {
+  background-color: #222222;
+  height: 60vh;
+  text-align: center;
+  animation: animatedBackground 90s linear infinite;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23343434' fill-opacity='0.14'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.footer > a {
+  transform: translateY(-1em);
+}
+
+.footer > .container {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.footer .header {
+  color: #F7F5F4;
+  font-family: 'Dancing Script';
+  font-size: 3.5em !important;
+}
+
+.footer > .container > .container > i {
+  padding-top: 0.15em;
+}
+
+.footer .massive {
+  font-size: 5em !important;
 }
 
 @keyframes App-logo-spin {
