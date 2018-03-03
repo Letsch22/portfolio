@@ -43,7 +43,7 @@
   height: 80px;
 }
 
-.App-header {
+#home {
   text-align: center;
   height: 100vh;
   width: 100vw;
@@ -52,7 +52,7 @@
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%235c5a61' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-.myself {
+#myself {
   padding-top: 20vh;
   padding-bottom: 4em;
   background-image: url('/images/background.jpg');
@@ -63,17 +63,17 @@
       rgba(0, 0, 0, 0.5));
 }
 
-.myself .header {
+#myself .header {
   font-size: 4em !important;
   font-family: 'Dancing Script';
   color: #F7F5F4;
 }
 
-.myself p {
+#myself p {
   font-size: 1.25em;
 }
 
-.resume {
+#resume {
   padding-top: 3em;
   padding-bottom: 3em;
 }
@@ -82,11 +82,11 @@
   color: #23386D !important;
 }
 
-.resume .item i {
+#resume .item i {
   font-family: 'Playfair Display', serif;
 }
 
-.resume p i {
+#resume p i {
   font-family: 'Playfair Display', serif;
 }
 
@@ -96,7 +96,7 @@
   color: #23386D !important;
 }
 
-.resume .list {
+#resume .list {
   display: block !important;
 }
 
