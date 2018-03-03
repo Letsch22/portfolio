@@ -1,22 +1,37 @@
 import React, { Component } from "react";
-import { Grid, Header, Label, List, Popup, Segment } from "semantic-ui-react";
+import { Grid, Header, Label, List, Popup, Segment, Sticky } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 // TODO refactor this as compositition
 class SkillsResumeSection extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {};
+        this.handleContextRef = this.handleContextRef.bind(this);
+    }
+
+    handleContextRef(contextRef) {
+        this.setState({ contextRef });
+    }
+
     render() {
+        const { contextRef } = this.state;
+
         return(
-            <Grid.Row>
+            <div ref={this.handleContextRef} className="row">
                 <Grid.Column width={5}>
-                    <Segment basic className="resume-header">
-                        <Header>{this.props.name}</Header>
-                    </Segment>
+                    <Sticky context={contextRef} offset={60}>
+                        <Segment basic className="resume-header">
+                            <Header size="huge">{this.props.name}</Header>
+                        </Segment>
+                    </Sticky>
                 </Grid.Column>
                 <Grid.Column width={11}>
                     {this.props.segments.map((segment, i) => this.renderSegment(segment, i))}
                 </Grid.Column>
-            </Grid.Row>
-        )
+            </div>
+        );
     }
 
     renderSegment(segment, index) {

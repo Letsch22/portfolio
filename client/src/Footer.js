@@ -7,7 +7,9 @@ class Footer extends Component {
     render() {
         return(
             <div className="footer">
-                <Button color="grey" icon circular size="huge" href="#home"><Icon size="large" name="arrow up"/></Button>
+                <Button color="grey" icon circular size="huge" href="#home">
+                    <Icon size="large" name="arrow up"/>
+                </Button>
                 <Container textAlign="center">
                     <Header>Thanks for visiting!</Header>
                     <IconSet isFooter={true}/>

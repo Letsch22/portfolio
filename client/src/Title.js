@@ -3,6 +3,7 @@ import { Header, Menu } from "semantic-ui-react";
 import MenuItems from "./MenuItems";
 
 class Title extends Component {
+
     render() {
         return(
             <div id="home">
@@ -20,8 +21,7 @@ class Title extends Component {
                     <Header size="large">Software Engineer</Header>
                 </div>
             </div>
-
-        )
+        );
     }
 }
 

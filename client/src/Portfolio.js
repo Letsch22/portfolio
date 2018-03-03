@@ -11,29 +11,42 @@ import Footer from "./Footer";
 
 class Portfolio extends Component {
 
-    state = { visible: false }
+    constructor(props) {
+        super(props);
+        this.state = {
+            visible: false
+        };
+        this.transitionMenuIn = this.transitionMenuIn.bind(this);
+        this.transitionMenuOut = this.transitionMenuOut.bind(this);
+    }
 
-    transitionMenuOut = () => this.setState({ visible: false })
-    transitionMenuIn = () => this.setState({ visible: true })
+    transitionMenuOut() {
+        this.setState({ visible: false });
+    }
+    transitionMenuIn() {
+        this.setState({ visible: true });
+    }
 
     render() {
-        const { visible } = this.state
         return (
             <div>
-                <Transition visible={visible} animation="fade down" duration={500}>
+                <Transition visible={this.state.visible} animation="fade down">
                     <Menu
-                    fixed="top"
-                    inverted
-                    pointing
-                    secondary
-                    size="massive"
-                    color="teal"
-                    className="menu-header"
-                    >
+                        fixed="top"
+                        inverted
+                        pointing
+                        secondary
+                        size="massive"
+                        color="teal"
+                        className="menu-header">
                         <MenuItems isHeader={false}/>
                     </Menu>
                 </Transition>
-                <Visibility once={false} offset={[10, 10]} onBottomPassed={this.transitionMenuIn} onBottomPassedReverse={this.transitionMenuOut}>
+                <Visibility
+                    once={false}
+                    offset={[10, 10]}
+                    onBottomPassed={this.transitionMenuIn}
+                    onBottomPassedReverse={this.transitionMenuOut}>
                     <Title/>
                 </Visibility>
                 <About/>
