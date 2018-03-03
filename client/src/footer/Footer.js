@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Container, Header, Icon } from "semantic-ui-react";
-import IconSet from "./IconSet";
+import IconSet from "../elements/IconSet";
 
 class Footer extends Component {
 

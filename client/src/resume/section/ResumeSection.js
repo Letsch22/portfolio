@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Grid, Header, List, Segment, Sticky } from "semantic-ui-react";
+import { Grid, Header, Segment, Sticky } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
-class StandardResumeSection extends Component {
+class ResumeSection extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { visible: true };
+        this.state = {};
         this.handleContextRef = this.handleContextRef.bind(this);
     }
 
@@ -30,7 +30,6 @@ class StandardResumeSection extends Component {
                     {this.props.segments.map((segment, i) => this.renderSegment(segment, i))}
                 </Grid.Column>
             </div>
-
         );
     }
 
@@ -38,28 +37,17 @@ class StandardResumeSection extends Component {
         return(
             <Segment key={index} basic>
                 <Header size="huge">{segment.title}</Header>
-                {segment.lists.map((list, i) => this.renderList(list, i))}
+                <p><i>{segment.subtitle}</i></p>
+                {React.cloneElement(this.props.children, { lists: segment.lists, isText: segment.isText })}
             </Segment>
         );
     }
-
-    renderList(list, index) {
-        var listitems = [];
-        for (var i = 0; i < list.length; i++) {
-            if (list[i].isitalics) {
-                listitems.push(<List.Item key={i}><i>{list[i].content}</i></List.Item>);
-            }
-            else {
-                listitems.push(<List.Item key={i}>{list[i].content}</List.Item>);
-            }
-        }
-        return(<List key={index} bulleted horizontal>{listitems}</List>);
-    }
 }
 
-StandardResumeSection.propTypes = {
+ResumeSection.propTypes = {
     name: PropTypes.string.isRequired,
-    segments: PropTypes.arrayOf(PropTypes.object.isRequired)
+    segments: PropTypes.arrayOf(PropTypes.object).isRequired,
+    children: PropTypes.object.isRequired
 };
 
-export default StandardResumeSection;
+export default ResumeSection;

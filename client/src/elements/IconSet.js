@@ -43,7 +43,6 @@ class IconSet extends Component {
             );
         } else {
             return(
-
                 <a key={i} href={icon.link} target={icon.name}>
                     <Icon key={i} color="teal" link name={icon.name} size="massive"/>
                 </a>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Header, Menu } from "semantic-ui-react";
-import MenuItems from "./MenuItems";
+import MenuItems from "../elements/MenuItems";
 
 class Title extends Component {
 

@@ -4,7 +4,7 @@
     "segments": [{
             "title": "LANGUAGES",
             "subtitle": "Descending proficiency",
-            "istext": false,
+            "isText": false,
             "lists": [
                 [{
                         "content": "devicon-java-plain",
@@ -45,7 +45,7 @@
             "id": 2,
             "title": "FRAMEWORKS",
             "subtitle": "Descending proficiency",
-            "istext": false,
+            "isText": false,
             "lists": [
                 [{
                         "content": "devicon-nodejs-plain",
@@ -70,7 +70,7 @@
             "id": 3,
             "title": "PRACTICES",
             "subtitle": "",
-            "istext": true,
+            "isText": true,
             "lists": [
                 [{
                         "content": "Test Driven Development"

@@ -5,24 +5,24 @@
             "title": "NORTHWESTERN UNIVERSITY",
             "lists": [
                 [{
-                        "isitalics": true,
+                        "isItalics": true,
                         "content": "Bachelor of Arts"
                     },
                     {
-                        "isitalics": false,
+                        "isItalics": false,
                         "content": "Sep 2013 \u2014 Jun 2017"
                     }
                 ],
                 [{
-                        "isitalics": false,
+                        "isItalics": false,
                         "content": "Computer Science major"
                     },
                     {
-                        "isitalics": false,
+                        "isItalics": false,
                         "content": "Economics minor"
                     },
                     {
-                        "isitalics": false,
+                        "isItalics": false,
                         "content": "3.7 GPA"
                     }
                 ]
@@ -37,20 +37,20 @@
                 "title": "ORACLE",
                 "lists": [
                     [{
-                            "isitalics": true,
+                            "isItalics": true,
                             "content": "Associate Software Engineer"
                         },
                         {
-                            "isitalics": false,
+                            "isItalics": false,
                             "content": "Aug 2017 \u2014 Present"
                         }
                     ],
                     [{
-                            "isitalics": false,
+                            "isItalics": false,
                             "content": "NetSuite Global Business Unit"
                         },
                         {
-                            "isitalics": false,
+                            "isItalics": false,
                             "content": "Platform Development Process Team"
                         }
                     ]
@@ -60,16 +60,16 @@
                 "title": "NETSUITE",
                 "lists": [
                     [{
-                            "isitalics": true,
+                            "isItalics": true,
                             "content": "Software Engineering Intern"
                         },
                         {
-                            "isitalics": false,
+                            "isItalics": false,
                             "content": "Jun 2016 \u2014 Sep 2016"
                         }
                     ],
                     [{
-                        "isitalics": false,
+                        "isItalics": false,
                         "content": "Platform Development Process Team"
                     }]
                 ]
@@ -78,11 +78,11 @@
                 "title": "EXOSITE",
                 "lists": [
                     [{
-                            "isitalics": true,
+                            "isItalics": true,
                             "content": "Support Services Intern"
                         },
                         {
-                            "isitalics": false,
+                            "isItalics": false,
                             "content": "Jun 2015 \u2014 Sep 2015"
                         }
                     ]

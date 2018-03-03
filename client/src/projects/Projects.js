@@ -3,16 +3,19 @@ import { Card, Container, Header, Icon } from "semantic-ui-react";
 
 class Projects extends Component {
 
-    state = {projects: []}
+    constructor(props) {
+        super(props);
+        this.state = { projects: [] };
+    }
 
     componentDidMount() {
         fetch("/json/projects")
-        .then(res => res.json())
-        .then(projects => this.setState({projects}));
+            .then(res => res.json())
+            .then(projects => this.setState({projects}));
     }
 
     renderCard(project, i) {
-        var extra = null
+        var extra = null;
 
         if (project.extra != null) {
             extra = (
@@ -20,18 +23,18 @@ class Projects extends Component {
                     <Icon name={project.extraIcon}/>
                     {project.extra}
                 </a>
-            )
+            );
         }
 
         return (
             <Card
-            key={i}
-            header={project.header}
-            image={project.image}
-            raised={true}
-            meta={project.meta}
-            description={project.description}
-            extra={extra}
+                key={i}
+                header={project.header}
+                image={project.image}
+                raised={true}
+                meta={project.meta}
+                description={project.description}
+                extra={extra}
             />
         );
     }

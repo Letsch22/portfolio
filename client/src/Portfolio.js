@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { Menu, Transition, Visibility } from "semantic-ui-react";
-import MenuItems from "./MenuItems";
-import Title from "./Title";
-import About from "./About";
-import Resume from "./Resume";
-import Projects from "./Projects";
-import Footer from "./Footer";
-
-//TODO items parameter shorthand
+import MenuItems from "./elements/MenuItems";
+import Title from "./title/Title";
+import About from "./about/About";
+import Resume from "./resume/Resume";
+import Projects from "./projects/Projects";
+import Footer from "./footer/Footer";
 
 class Portfolio extends Component {
 

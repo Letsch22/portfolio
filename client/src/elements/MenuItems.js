@@ -6,10 +6,13 @@ import PropTypes from "prop-types";
 
 class MenuItems extends Component {
 
-    state = {items: ["home", "myself", "resume", "projects"]}
+    constructor(props) {
+        super(props);
+        this.state = { items: ["home", "myself", "resume", "projects"] };
+    }
 
     renderItem(name, i) {
-        return(<Menu.Item key={i} link href={"#"+name}>{name.toUpperCase()}</Menu.Item>)
+        return(<Menu.Item key={i} link href={"#"+name}>{name.toUpperCase()}</Menu.Item>);
     }
 
     render() {
@@ -30,8 +33,8 @@ class MenuItems extends Component {
     }
 }
 
-IconSet.propTypes = {
-    isFooter: PropTypes.bool.isRequired
+MenuItems.propTypes = {
+    isHeader: PropTypes.bool.isRequired
 };
 
 

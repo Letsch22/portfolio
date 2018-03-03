@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Grid } from "semantic-ui-react";
-import StandardResumeSection from "./StandardResumeSection";
-import SkillsResumeSection from "./SkillsResumeSection";
+import ResumeSection from "./section/ResumeSection";
+import ResumeContent from "./section/content/ResumeContent";
+import SkillsContent from "./section/content/SkillsContent";
 
 class Resume extends Component {
 
@@ -24,19 +25,24 @@ class Resume extends Component {
 
     renderStandardSection(section) {
         return (
-            <StandardResumeSection
+            <ResumeSection
                 key={section.id}
                 name={section.name}
-                segments={section.segments}/>
+                segments={section.segments}>
+                <ResumeContent/>
+            </ResumeSection>
+
         );
     }
 
     renderSkillsSection(section) {
         return (
-            <SkillsResumeSection
+            <ResumeSection
                 key={section.id}
                 name={section.name}
-                segments={section.segments}/>
+                segments={section.segments}>
+                <SkillsContent/>
+            </ResumeSection>
         );
     }
 
