@@ -108,20 +108,25 @@
   margin-left: 0.15em !important;
 }
 
-.projects {
+#projects {
   background-color: #23386D;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%231d2e59' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
   animation: animatedBackground 90s linear infinite;
   padding-bottom: 6em;
   padding-top: 3em;
+  height: 82vh;
 }
 
-.projects > .container > .header {
+#projects > .container > .header {
   color: #F7F5F4;
   font-family: 'Dancing Script';
   font-size: 3.5em !important;
   padding: 0.25em;
   text-align: center;
+}
+
+#projects .visible.transition {
+  display: flex!important;
 }
 
 .footer {
