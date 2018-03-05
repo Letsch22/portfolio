@@ -17,7 +17,7 @@ class Title extends Component {
                     <MenuItems isHeader={true}/>
                 </Menu>
                 <div className="title-content">
-                    <Header size="huge">DANIEL LETSCHER</Header>
+                    <Header size="huge" color="teal">DANIEL LETSCHER</Header>
                     <Header size="large">Software Engineer</Header>
                 </div>
             </div>

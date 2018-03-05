@@ -21,7 +21,6 @@
 
 .title-content > .huge {
   font-size: 4em !important;
-  color: #8BD7F8 !important;
 }
 
 .title-content > .large {
@@ -93,7 +92,6 @@
 .resume-header .header {
   font-family: 'Dancing Script' !important;
   font-size: 3em !important;
-  color: #23386D !important;
 }
 
 #resume .list {
@@ -127,6 +125,9 @@
 
 #projects .visible.transition {
   display: flex!important;
+}
+
+.custom-modal {
 }
 
 .footer {

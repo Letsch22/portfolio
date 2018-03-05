@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Container, Header, Transition, Visibility } from "semantic-ui-react";
+import { Button, Card, Container, Grid, Header, Transition, Visibility } from "semantic-ui-react";
 import Project from "./project/Project";
 
 class Projects extends Component {
@@ -28,10 +28,27 @@ class Projects extends Component {
                 image={project.image}
                 meta={project.meta}
                 description={project.description}
+                modalTarget={project.modalTarget}
                 extra={project.extra}
                 extraIcon={project.extraIcon}
                 extraLink={project.extraLink}
             />
+        );
+    }
+    renderModal(project, i) {
+        return (
+            <div key={i} id={project.modalTarget} className="custom-modal">
+                <Grid columns={4} relaxed padded centered>
+                    <Grid.Column size={2}/>
+                    <Grid.Column size={7}>
+                        <Header color="blue" size="huge">{project.header}</Header>
+                    </Grid.Column>
+                    <Grid.Column size={7}/>
+                    <Grid.Column size={2} textAlign="right">
+                        <Button icon="close" color="blue" circular className={"close-" + project.modalTarget}/>
+                    </Grid.Column>
+                </Grid>
+            </div>
         );
     }
 
@@ -48,6 +65,7 @@ class Projects extends Component {
                         </Transition>
                     </Visibility>
                 </Container>
+                {this.state.projects.map((project, i) => this.renderModal(project, i))}
             </div>
         );
     }

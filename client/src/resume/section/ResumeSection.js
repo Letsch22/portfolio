@@ -22,7 +22,7 @@ class ResumeSection extends Component {
                 <Grid.Column width={5}>
                     <Sticky context={contextRef} offset={60}>
                         <Segment basic className="resume-header">
-                            <Header size="huge">{this.props.name}</Header>
+                            <Header size="huge" color="blue">{this.props.name}</Header>
                         </Segment>
                     </Sticky>
                 </Grid.Column>

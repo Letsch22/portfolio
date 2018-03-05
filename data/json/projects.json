@@ -3,6 +3,7 @@
     "image": "/images/worst-aid.png",
     "meta": "Created in 2017",
     "description": "A chatbot web application that serves up first aid instructions, diagrams, and videos",
+    "modalTarget": "worst-aid",
     "extra": "Check it out",
     "extraIcon": "external",
     "extraLink": "https://worst-aid.herokuapp.com/"
@@ -10,12 +11,14 @@
     "header": "ESP8266 OCCUPANCY SENSOR",
     "image": "/images/esp8266.png",
     "meta": "Created in 2015",
-    "description": "A custom-built Internet of Things device that sends occupancy infomation about a conference room to a dashboard via Exosite's cloud"
+    "description": "A custom-built Internet of Things device that sends occupancy infomation about a conference room to a dashboard via Exosite's cloud",
+    "modalTarget": "esp8266"
 }, {
     "header": "THIS SITE",
     "image": "/images/thissite.png",
     "meta": "Created in 2018",
     "description": "A personal showcase web application built using a React frontend connected to an Express backend",
+    "modalTarget": "portfolio",
     "extra": "GitHub",
     "extraIcon": "github",
     "extraLink": "https://github.com/Letsch22/portfolio"

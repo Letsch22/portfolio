@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Card, Dimmer, Icon, Image } from "semantic-ui-react";
 import PropTypes from "prop-types";
+import AnimatedModal from "../../plugins/AnimatedModal";
 
 class Project extends Component {
 
@@ -24,7 +25,12 @@ class Project extends Component {
 
         const content = (
             <div>
-                <Button inverted color="grey" size="huge" primary>Learn more</Button>
+                <AnimatedModal
+                    modalTarget={this.props.modalTarget}
+                    animatedOut="bounceOut"
+                    color="#F7F5F4">
+                    <Button inverted color="grey" size="huge" primary>Learn more</Button>
+                </AnimatedModal>
             </div>
         );
 
@@ -73,6 +79,7 @@ Project.propTypes = {
     image: PropTypes.string.isRequired,
     meta: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    modalTarget: PropTypes.string.isRequired,
     extra: PropTypes.string,
     extraLink: PropTypes.string,
     extraIcon: PropTypes.string
