@@ -47,6 +47,7 @@
   height: 100vh;
   width: 100vw;
   animation: animatedBackground 90s linear infinite;
+  will-change: background-position;
   background-color: #222222;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%235c5a61' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
@@ -109,7 +110,6 @@
 #projects {
   background-color: #23386D;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%231d2e59' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
-  animation: animatedBackground 90s linear infinite;
   padding-bottom: 6em;
   padding-top: 3em;
   height: 82vh;
@@ -144,7 +144,6 @@
   background-color: #222222;
   height: 60vh;
   text-align: center;
-  animation: animatedBackground 90s linear infinite;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23343434' fill-opacity='0.14'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
