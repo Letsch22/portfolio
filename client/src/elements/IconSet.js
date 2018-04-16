@@ -43,7 +43,7 @@ class IconSet extends Component {
             );
         } else {
             return(
-                <a key={i} href={icon.link} target={icon.name}>
+                <a key={i} href={icon.link} target="_blank">
                     <Icon key={i} color="teal" link name={icon.name} size="massive"/>
                 </a>
             );
@@ -59,7 +59,7 @@ class IconSet extends Component {
             );
         } else {
             return(
-                <Menu.Item key={i} icon link href={icon.link} target={icon.name}>
+                <Menu.Item key={i} icon link href={icon.link} target="_blank">
                     <Icon key={i} name={icon.name} size="big"/>
                 </Menu.Item>
             );

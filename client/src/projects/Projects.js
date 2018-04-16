@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, Container, Grid, Header, Transition, Visibility } from "semantic-ui-react";
+import { Button, Card, Container, Grid, Header, List, Transition, Visibility } from "semantic-ui-react";
 import Project from "./project/Project";
 
 class Projects extends Component {
@@ -38,17 +38,41 @@ class Projects extends Component {
     renderModal(project, i) {
         return (
             <div key={i} id={project.modalTarget} className="custom-modal">
-                <Grid columns={4} relaxed padded centered>
-                    <Grid.Column size={2}/>
-                    <Grid.Column size={7}>
-                        <Header color="blue" size="huge">{project.header}</Header>
-                    </Grid.Column>
-                    <Grid.Column size={7}/>
-                    <Grid.Column size={2} textAlign="right">
-                        <Button icon="close" color="blue" circular className={"close-" + project.modalTarget}/>
-                    </Grid.Column>
+                <Grid relaxed padded centered>
+                    <Grid.Row className="modal-header" columns={3}>
+                        <Grid.Column width={3}/>
+                        <Grid.Column width={10}>
+                            <Header color="blue" size="huge">{project.header}</Header>
+                        </Grid.Column>
+                        <Grid.Column width={3} textAlign="right">
+                            <Button icon="close" color="blue" circular className={"close-" + project.modalTarget}/>
+                        </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row className="modal-content" columns={4}>
+                        <Grid.Column width={3}/>
+                        <Grid.Column width={3}>
+                            <Header color="blue" size="large">What Was Used</Header>
+                            <List items={project.modalSkills}/>
+                            <Header color="blue" size="large">What For</Header>
+                            <p>{project.modalProcess}</p>
+                        </Grid.Column>
+                        <Grid.Column width={1}/>
+                        <Grid.Column width={6}>
+                            <Header size="medium">{project.modalSubheader}</Header>
+                            <p>{project.modalDescription}</p>
+                            <Header color="blue" size="large">See For Yourself</Header>
+                            {project.modalButtons.map((button, i) => this.renderModalButton(button, i))}
+                        </Grid.Column>
+                        <Grid.Column width={3}/>
+                    </Grid.Row>
                 </Grid>
             </div>
+        );
+    }
+
+    renderModalButton(button, i) {
+        return (
+            <Button key={i} href={button.link} icon={button.icon} content={button.name} size="large" color="grey" target="_blank"/>
         );
     }
 

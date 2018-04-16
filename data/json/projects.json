@@ -4,6 +4,22 @@
     "meta": "Created in 2017",
     "description": "A chatbot web application that serves up first aid instructions, diagrams, and videos",
     "modalTarget": "worst-aid",
+    "modalSubheader": "A chatbot dedicated to answering first aid questions using instructions, diagrams, and videos",
+    "modalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc. Tincidunt nunc pulvinar sapien et ligula. A pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt. Senectus et netus et malesuada fames ac turpis egestas integer. Arcu dui vivamus arcu felis bibendum ut. Vitae nunc sed velit dignissim sodales ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.",
+    "modalSkills" : ["Python", "Flask", "JavaScript", "Vue.js", "spaCy", "Beautiful Soup", "Redis", "HTML", "CSS", "Docker"],
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.",
+    "modalButtons": [
+        {
+            "link": "https://worst-aid.herokuapp.com/",
+            "name": "Live Demo",
+            "icon": "external"
+        },
+        {
+            "link": "https://github.com/ngparas/worst-aid-parsing",
+            "name": "GitHub",
+            "icon": "github"
+        }
+    ],
     "extra": "Check it out",
     "extraIcon": "external",
     "extraLink": "https://worst-aid.herokuapp.com/"
@@ -12,13 +28,35 @@
     "image": "/images/esp8266.png",
     "meta": "Created in 2015",
     "description": "A custom-built Internet of Things device that sends occupancy infomation about a conference room to a dashboard via Exosite's cloud",
-    "modalTarget": "esp8266"
+    "modalTarget": "esp8266",
+    "modalSubheader": "An Internet of Things device that scans a room for occupants and provides other relevant environmental details to an Exosite dashboard",
+    "modalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc. Tincidunt nunc pulvinar sapien et ligula. A pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt. Senectus et netus et malesuada fames ac turpis egestas integer. Arcu dui vivamus arcu felis bibendum ut. Vitae nunc sed velit dignissim sodales ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.",
+    "modalSkills" : ["Arduino", "Wiring (C++)", "Lua", "JavaScript", "Circuitry"],
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.",
+    "modalButtons": [
+        {
+            "link": "/documents/exosite.pdf",
+            "name": "Internship Summary",
+            "icon": "file pdf outline"
+        }
+    ]
 }, {
     "header": "THIS SITE",
     "image": "/images/thissite.png",
     "meta": "Created in 2018",
     "description": "A personal showcase web application built using a React frontend connected to an Express backend",
     "modalTarget": "portfolio",
+    "modalSubheader": "A personal portfolio web application with a React frontent and Express backend",
+    "modalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc. Tincidunt nunc pulvinar sapien et ligula. A pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt. Senectus et netus et malesuada fames ac turpis egestas integer. Arcu dui vivamus arcu felis bibendum ut. Vitae nunc sed velit dignissim sodales ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.",
+    "modalSkills" : ["React", "Express", "JavaScript", "Node.js", "HTML", "CSS"],
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.",
+    "modalButtons": [
+        {
+            "link": "https://github.com/Letsch22/portfolio",
+            "name": "GitHub",
+            "icon": "github"
+        }
+    ],
     "extra": "GitHub",
     "extraIcon": "github",
     "extraLink": "https://github.com/Letsch22/portfolio"

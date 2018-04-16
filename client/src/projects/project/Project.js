@@ -39,7 +39,7 @@ class Project extends Component {
         if (this.props.extra != null) {
             extra = (
                 <Card.Content extra>
-                    <a href={this.props.extraLink} target={this.props.header}>
+                    <a href={this.props.extraLink} target="_blank">
                         <Icon name={this.props.extraIcon}/>
                         {this.props.extra}
                     </a>
