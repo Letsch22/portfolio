@@ -54,6 +54,13 @@
                             "content": "Platform Development Process Team"
                         }
                     ]
+                ],
+                "body": [
+                    "Contribute fully to SuiteCloud Development Framework product release cycle, including feature and technical design as well as implementations using Java, SQL, and Test Driven Development",
+                    "Lead efforts in better testing by representing scrum team in engineering unit testing meetings and promoting useful testing techniques like matchers, mocking, and other tools (the Platform Development Process team has one of the highest code coverage marks across all engineering teams)",
+                    "Implement framework-wide refactors during sustainability periods in accordance with SOLID principles",
+                    "Develop fixes for customer issues in a timely manner following ERC guidelines",
+                    "Participate in company pro bono program by volunteering up to 20 hours each quarter helping a nonprofit organization with their NetSuite implementation"
                 ]
             },
             {
@@ -72,6 +79,10 @@
                         "isItalics": false,
                         "content": "Platform Development Process Team"
                     }]
+                ],
+                "body": [
+                    "Using Java and SQL, designed and implemented server-side API and client-side tool that customers will use to convert ERP and CRM account customizations built under old bundle framework to newlyreleased application development framework",
+                    "Using Java, designed and implemented many feature additions to NetSuite Eclipse IDE plugin that will enable customers to take full advantage of newly-released application development framework"
                 ]
             },
             {
@@ -86,6 +97,11 @@
                             "content": "Jun 2015 \u2014 Sep 2015"
                         }
                     ]
+                ],
+                "body": [
+                    "Updated and improved libraries for company APIs in various languages including C#, C++, Python, Go, and Java",
+                    "Designed, developed, and programmed Internet of Things demos working in Arduino IDE, cloud-based Lua scripts, and JavaScript",
+                    "Answered support tickets by debugging customer Internet of Things solutions"
                 ]
             }
         ]

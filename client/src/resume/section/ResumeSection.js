@@ -38,7 +38,7 @@ class ResumeSection extends Component {
             <Segment key={index} basic>
                 <Header size="huge">{segment.title}</Header>
                 <p><i>{segment.subtitle}</i></p>
-                {React.cloneElement(this.props.children, { lists: segment.lists, isText: segment.isText })}
+                {React.cloneElement(this.props.children, { lists: segment.lists, body: segment.body, isText: segment.isText })}
             </Segment>
         );
     }

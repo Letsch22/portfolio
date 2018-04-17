@@ -23,12 +23,24 @@ class ResumeContent extends Component {
     }
 
     render() {
-        return (this.props.lists.map((list, i) => this.renderList(list, i)));
+        if (this.props.body == null) {
+            return(this.props.lists.map((list, i) => this.renderList(list, i)));
+        }
+        else
+        {
+            return (
+                <div>
+                    {this.props.lists.map((list, i) => this.renderList(list, i))}
+                    <List className="body" bulleted items={this.props.body}></List>
+                </div>
+            );
+        }
     }
 }
 
 ResumeContent.propTypes = {
-    lists: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.object))
+    lists: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.object)),
+    body: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default ResumeContent;

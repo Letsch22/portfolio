@@ -78,6 +78,10 @@
   padding-bottom: 3em;
 }
 
+#resume .body > .item {
+  line-height: 2em;
+}
+
 .card .header {
   color: #23386D !important;
 }
