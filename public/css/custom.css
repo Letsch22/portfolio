@@ -53,14 +53,13 @@
 }
 
 #myself {
-  padding-top: 20vh;
+  padding-top: 5vh;
   padding-bottom: 4em;
-  background-image: url('/images/background.jpg');
+  background-image: url('/images/background_original.jpg');
+  background-color: #23386D;
   background-size: cover;
   height: 75vh;
-  background-blend-mode: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5));
+  background-blend-mode: multiply;
 }
 
 #myself .header {
@@ -70,7 +69,8 @@
 }
 
 #myself p {
-  font-size: 1.25em;
+  color: #F7F5F4;
+  font-size: 1.15em;
 }
 
 #resume {
