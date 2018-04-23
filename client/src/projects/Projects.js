@@ -54,12 +54,12 @@ class Projects extends Component {
                             <Header color="blue" size="large">What Was Used</Header>
                             <List items={project.modalSkills}/>
                             <Header color="blue" size="large">What For</Header>
-                            <p>{project.modalProcess}</p>
+                            <p>{project.modalWhatFor}</p>
                         </Grid.Column>
                         <Grid.Column width={1}/>
                         <Grid.Column width={6}>
                             <Header size="medium">{project.modalSubheader}</Header>
-                            <p>{project.modalDescription}</p>
+                            {project.modalDescription.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                             <Header color="blue" size="large">See For Yourself</Header>
                             {project.modalButtons.map((button, i) => this.renderModalButton(button, i))}
                         </Grid.Column>

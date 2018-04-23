@@ -1,15 +1,18 @@
 [{
-    "header": "WORST AID",
-    "image": "/images/worst-aid.png",
+    "header": "FIRST AID BOT",
+    "image": "/images/first-aid.png",
     "meta": "Created in 2017",
     "description": "A chatbot web application that serves up first aid instructions, diagrams, and videos",
     "modalTarget": "worst-aid",
     "modalSubheader": "A chatbot dedicated to answering first aid questions using instructions, diagrams, and videos",
-    "modalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc. Tincidunt nunc pulvinar sapien et ligula. A pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt. Senectus et netus et malesuada fames ac turpis egestas integer. Arcu dui vivamus arcu felis bibendum ut. Vitae nunc sed velit dignissim sodales ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.",
-    "modalSkills" : ["Python", "Flask", "JavaScript", "Vue.js", "spaCy", "Beautiful Soup", "Redis", "HTML", "CSS", "Docker"],
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-    "modalButtons": [
-        {
+    "modalDescription": [
+        "This chatbot responds with a treatment routine when the user asks it about a first aid situation. The user can then progress through the routine step-by-step using natural language or can ask a question about a particular step. If a question is asked, the chatbot can respond with either some information, a diagram, or an instructional video.",
+        "Our team was responsible for creation of the chatbot interface and walking through routines we fetched from the web. We used Python package Beautiful Soup to scrape the DOM of WebMD first aid pages. Content from those pages gets translated into ordered procedures and then inserted into a Redis database. We also classify if-else branch statements within those procedures using Python package spaCy. Our walker was designed to allow the user to use natural language to say whether or not an if condition applied. The walker procedes down the user-specified branch. Whenever the user asks question, our RESTful API queries the question and answer service developed by the other teams and provide it the current node of our walker for context. We implemented the frontend user interface using Vue.js and the backend routing using Flask.",
+        "I've hosted the chatbot live to try out; just click the link below. The hosted demo doesn't include the question and answer service from the other teams, so responses to those queries are stubbed out."
+    ],
+    "modalSkills": ["Python", "Flask", "JavaScript", "Vue.js", "spaCy", "Beautiful Soup", "Redis", "HTML", "CSS", "Docker"],
+    "modalWhatFor": "This bot was built by my teammates and I for a Northwestern EECS project course. We built it to contribute to the professor's quarter-long goal for the course: to have three discrete teams all contribute independent systems that would come together to be a first aid bot. Our team was responsible for providing the central chatbot interface and commands as well as first aid procedures parsed from the web.",
+    "modalButtons": [{
             "link": "https://worst-aid.herokuapp.com/",
             "name": "Live Demo",
             "icon": "external"
@@ -30,33 +33,38 @@
     "description": "A custom-built Internet of Things device that sends occupancy infomation about a conference room to a dashboard via Exosite's cloud",
     "modalTarget": "esp8266",
     "modalSubheader": "An Internet of Things device that scans a room for occupants and provides other relevant environmental details to an Exosite dashboard",
-    "modalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc. Tincidunt nunc pulvinar sapien et ligula. A pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt. Senectus et netus et malesuada fames ac turpis egestas integer. Arcu dui vivamus arcu felis bibendum ut. Vitae nunc sed velit dignissim sodales ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.",
-    "modalSkills" : ["Arduino", "Wiring (C++)", "Lua", "JavaScript", "Circuitry"],
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-    "modalButtons": [
-        {
-            "link": "/documents/exosite.pdf",
-            "name": "Internship Summary",
-            "icon": "file pdf outline"
-        }
-    ]
+    "modalDescription": [
+        "When placed in a room, this sensor records movement and temperature data. It then sends that data to Exosite's cloud for processing. Users can then view the processed data and useful information on a dashboard built on Exosite's cloud. If enough rooms are covered, the dashboard can report which rooms are open for use.",
+        "I built this sensor around the ESP8266 WiFi chip. That chip is easy to use and can connect to various sensors using existing firmware. It also has the benefit of being more power efficient than comparable chipsets. For sensors, I used a temperature sensor to provide temperature readouts for the room and a motion detector to use as the basis of whether or not the room is occupied. I wrote the firmware for the chipset and its sensors using Wiring, an Arduino variant of C++. The firmware not only pushes data to Exosites cloud but puts the device into a power saving mode when no motions are detected for extended battery use. Once the data reaches Exosite's cloud, Lua scripts process the data to report temperature and a calculation of whether or not the room is occupied based on the number of movements reported. The information is then displayed as a custom JavaScript widget on a public Exosite dashboard for employees to view.",
+        "For display and final delivery, I soldered the wiring together and enclosed the units in plastic cases. The units were then placed in some of Exosite's most-used conference rooms for employee convenience."
+    ],
+    "modalSkills": ["Arduino", "Wiring (C++)", "Lua", "JavaScript", "Circuitry"],
+    "modalWhatFor": "As part of my internship with Exosite, I was tasked with developing an Internet of Things proof-of-concept solution for the duration of my internship while I performed my other responsibilities as an intern. I came up with the idea after seeing how often my coworkers would wander around the office searching for an open conference room. The device was meant to show the power of Exosite's platform while giving employees the option to check for available conference rooms remotely.",
+    "modalButtons": [{
+        "link": "/documents/exosite.pdf",
+        "name": "Internship Summary",
+        "icon": "file pdf outline"
+    }]
 }, {
     "header": "THIS SITE",
     "image": "/images/thissite.png",
     "meta": "Created in 2018",
     "description": "A personal showcase web application built using a React frontend connected to an Express backend",
     "modalTarget": "portfolio",
-    "modalSubheader": "A personal portfolio web application with a React frontent and Express backend",
-    "modalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc. Tincidunt nunc pulvinar sapien et ligula. A pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt. Senectus et netus et malesuada fames ac turpis egestas integer. Arcu dui vivamus arcu felis bibendum ut. Vitae nunc sed velit dignissim sodales ut. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.",
-    "modalSkills" : ["React", "Express", "JavaScript", "Node.js", "HTML", "CSS"],
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-    "modalButtons": [
-        {
-            "link": "https://github.com/Letsch22/portfolio",
-            "name": "GitHub",
-            "icon": "github"
-        }
+    "modalSubheader": "A personal portfolio web application with a React frontend and Express backend",
+    "modalDescription": [
+        "I built this portfolio site in two discrete parts. The first is a frontend built in React and styled using Semantic-UI and custom CSS. The second is a backend routed using Express that serves up data and content for the frontend to display.",
+        "I built the frontend primarily using React components and custom styling where needed. Most of the UI elements used come from the React integration of Semantic-UI. Other smaller components were used too. For instance, this modal you are looking at is the animatedModal.js jQuery plugin that I ported over to React for use on this portfolio. Using React's component lifecycle, the frontend queries the backend for data and content to display when components are ready for view.",
+        "I routed the backend using the Express web framework. The routing serves up data to the frontend using API endpoints that respond with JSON-formatted content, images, or documents. The frontend simply forwards requests to the backend by specifying the backend as a proxy.",
+        "I hope you find the portfolio a useful way to learn a little bit about myself."
     ],
+    "modalSkills": ["React", "Express", "JavaScript", "Node.js", "HTML", "CSS"],
+    "modalWhatFor": "I didn't have a website to showcase myself, so I created one. I wanted to use the opportunity to learn about a popular framework I didn't know much about, React, and to hone my skills in other areas where I already had experience.",
+    "modalButtons": [{
+        "link": "https://github.com/Letsch22/portfolio",
+        "name": "GitHub",
+        "icon": "github"
+    }],
     "extra": "GitHub",
     "extraIcon": "github",
     "extraLink": "https://github.com/Letsch22/portfolio"
