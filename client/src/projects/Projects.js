@@ -83,7 +83,7 @@ class Projects extends Component {
                     <Header>Projects</Header>
                     <Visibility onBottomVisible={this.flipCards} once>
                         <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
-                            <Card.Group itemsPerRow={3} centered textAlign="left">
+                            <Card.Group itemsPerRow={3} centered textAlign="left" stackable>
                                 {this.state.projects.map((project, i) => this.renderProject(project, i))}
                             </Card.Group>
                         </Transition>

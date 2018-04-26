@@ -49,7 +49,7 @@ class Resume extends Component {
     render() {
         return(
             <div id="resume">
-                <Grid columns={2} container relaxed padded centered divided="vertically">
+                <Grid columns={2} container relaxed padded centered divided="vertically" stackable>
                     {this.state.standardSections.map(section => this.renderStandardSection(section))}
                     {this.state.skillsSections.map(section => this.renderSkillsSection(section))}
                 </Grid>

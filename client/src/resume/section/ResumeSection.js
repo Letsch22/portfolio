@@ -19,14 +19,19 @@ class ResumeSection extends Component {
 
         return(
             <div ref={this.handleContextRef} className="row">
-                <Grid.Column width={5}>
+                <Grid.Column width={5} only="computer">
                     <Sticky context={contextRef} offset={60}>
                         <Segment basic className="resume-header">
                             <Header size="huge" color="blue">{this.props.name}</Header>
                         </Segment>
                     </Sticky>
                 </Grid.Column>
-                <Grid.Column width={11}>
+                <Grid.Column width={12} only="mobile" textAlign="center">
+                    <Segment basic className="resume-header">
+                        <Header size="huge" color="blue">{this.props.name}</Header>
+                    </Segment>
+                </Grid.Column>
+                <Grid.Column computer={11} mobile={12}>
                     {this.props.segments.map((segment, i) => this.renderSegment(segment, i))}
                 </Grid.Column>
             </div>

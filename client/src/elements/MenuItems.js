@@ -20,7 +20,7 @@ class MenuItems extends Component {
             return(
                 <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
                     {this.state.items.map((item, i) => this.renderItem(item, i))}
-                    <IconSet isFooter={false}/>
+                    <IconSet isFooter={false} className="custom-mobile-hidden"/>
                 </Scrollspy>
             );
         } else {

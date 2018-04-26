@@ -180,3 +180,21 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media only screen and (max-width: 768px) {
+  .header-links {
+    top: 0;
+    transform: translateY(20%);
+    position: static;
+  }
+
+  .title-content {
+    position: static;
+    top: 0;
+    transform: translateY(50%);
+  }
+
+  .custom-mobile-hidden {
+    display: none !important;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, Menu } from "semantic-ui-react";
+import { Container, Header, Menu } from "semantic-ui-react";
 import MenuItems from "../elements/MenuItems";
 
 class Title extends Component {
@@ -16,10 +16,10 @@ class Title extends Component {
                     className="header-links">
                     <MenuItems isHeader={true}/>
                 </Menu>
-                <div className="title-content">
+                <Container className="title-content">
                     <Header size="huge" color="teal">DANIEL LETSCHER</Header>
                     <Header size="large">Software Engineer</Header>
-                </div>
+                </Container>
             </div>
         );
     }

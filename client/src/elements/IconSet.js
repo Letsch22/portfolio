@@ -21,13 +21,13 @@ class IconSet extends Component {
     render() {
         if (this.props.isFooter) {
             return(
-                <Container text className="icons">
+                <Container text className={this.props.className + " icons"}>
                     {this.state.icons.map((icon, i) => this.renderFooterIcon(icon, i))}
                 </Container>
             );
         } else {
             return(
-                <Menu.Menu position="right">
+                <Menu.Menu position="right" className={this.props.className}>
                     {this.state.icons.map((icon, i) => this.renderMenuIcon(icon, i))}
                 </Menu.Menu>
             );
@@ -68,7 +68,8 @@ class IconSet extends Component {
 }
 
 IconSet.propTypes = {
-    isFooter: PropTypes.bool.isRequired
+    isFooter: PropTypes.bool.isRequired,
+    className: PropTypes.string
 };
 
 export default IconSet;
