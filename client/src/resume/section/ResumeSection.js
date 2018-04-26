@@ -26,12 +26,12 @@ class ResumeSection extends Component {
                         </Segment>
                     </Sticky>
                 </Grid.Column>
-                <Grid.Column width={12} only="mobile" textAlign="center">
+                <Grid.Column width={12} only="mobile tablet" textAlign="center">
                     <Segment basic className="resume-header">
                         <Header size="huge" color="blue">{this.props.name}</Header>
                     </Segment>
                 </Grid.Column>
-                <Grid.Column computer={11} mobile={12}>
+                <Grid.Column computer={11} mobile={12} tablet={12}>
                     {this.props.segments.map((segment, i) => this.renderSegment(segment, i))}
                 </Grid.Column>
             </div>
