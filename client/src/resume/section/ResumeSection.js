@@ -31,7 +31,7 @@ class ResumeSection extends Component {
                         <Header size="huge" color="blue">{this.props.name}</Header>
                     </Segment>
                 </Grid.Column>
-                <Grid.Column computer={11} mobile={12} tablet={12}>
+                <Grid.Column computer={11} mobile={12}>
                     {this.props.segments.map((segment, i) => this.renderSegment(segment, i))}
                 </Grid.Column>
             </div>

@@ -38,7 +38,7 @@ class Projects extends Component {
     renderModal(project, i) {
         return (
             <div key={i} id={project.modalTarget} className="custom-modal">
-                <Grid relaxed padded centered>
+                <Grid relaxed padded centered doubling>
                     <Grid.Row className="modal-header" columns={3}>
                         <Grid.Column width={3}/>
                         <Grid.Column width={10}>
@@ -48,8 +48,8 @@ class Projects extends Component {
                             <Button icon="close" color="blue" circular className={"close-" + project.modalTarget}/>
                         </Grid.Column>
                     </Grid.Row>
-                    <Grid.Row className="modal-content" columns={4}>
-                        <Grid.Column width={3}/>
+                    <Grid.Row className="modal-content stackable" columns={4}>
+                        <Grid.Column width={3} only="computer"/>
                         <Grid.Column width={3}>
                             <Header color="blue" size="large">What Was Used</Header>
                             <List items={project.modalSkills}/>
@@ -58,12 +58,12 @@ class Projects extends Component {
                         </Grid.Column>
                         <Grid.Column width={1}/>
                         <Grid.Column width={6}>
-                            <Header size="medium">{project.modalSubheader}</Header>
+                            <Header color="blue" size="medium">{project.modalSubheader}</Header>
                             {project.modalDescription.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                             <Header color="blue" size="large">See For Yourself</Header>
                             {project.modalButtons.map((button, i) => this.renderModalButton(button, i))}
                         </Grid.Column>
-                        <Grid.Column width={3}/>
+                        <Grid.Column width={3} only="computer"/>
                     </Grid.Row>
                 </Grid>
             </div>
@@ -80,16 +80,16 @@ class Projects extends Component {
         return (
             <div id="projects">
                 <Container>
-                    <Header>Projects</Header>
                     <Visibility onBottomVisible={this.flipCards} once>
-                        <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
-                            <Card.Group itemsPerRow={3} centered textAlign="left" stackable>
-                                {this.state.projects.map((project, i) => this.renderProject(project, i))}
-                            </Card.Group>
-                        </Transition>
+                        <Header>Projects</Header>
                     </Visibility>
+                    <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
+                        <Card.Group itemsPerRow={3} centered textAlign="left" stackable>
+                            {this.state.projects.map((project, i) => this.renderProject(project, i))}
+                        </Card.Group>
+                    </Transition>
+                    {this.state.projects.map((project, i) => this.renderModal(project, i))}
                 </Container>
-                {this.state.projects.map((project, i) => this.renderModal(project, i))}
             </div>
         );
     }

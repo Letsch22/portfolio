@@ -5,6 +5,10 @@
 
 /* colors (see http://colormind.io/bootstrap/): #F7F5F4, #8BD7F8, #222222, #8899AC, #23386D */
 
+body, html {
+  width: 100vw;
+}
+
 .header-links {
   background-color: transparent !important;
   border: none !important;
@@ -37,15 +41,9 @@
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 #home {
   text-align: center;
   height: 100vh;
-  width: 100vw;
   animation: animatedBackground 90s linear infinite;
   will-change: background-position;
   background-color: #222222;
@@ -58,14 +56,16 @@
   background-image: url('/images/background_original.jpg');
   background-color: #23386D;
   background-size: cover;
-  height: 75vh;
+  min-height: 75vh;
   background-blend-mode: multiply;
+  background-position-x: 25%;
 }
 
 #myself .header {
   font-size: 4em !important;
   font-family: 'Dancing Script';
   color: #F7F5F4;
+  text-align: center;
 }
 
 #myself p {
@@ -116,14 +116,15 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%231d2e59' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
   padding-bottom: 6em;
   padding-top: 3em;
-  height: 82vh;
+  min-height: 82vh;
 }
 
-#projects > .container > .header {
+#projects > .container > div > .header {
   color: #F7F5F4;
   font-family: 'Dancing Script';
   font-size: 3.5em !important;
   padding: 0.25em;
+  padding-bottom: 0.5em;
   text-align: center;
 }
 
@@ -176,22 +177,11 @@
   font-size: 4em !important;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 @media only screen and (max-width: 768px) {
   .header-links {
     top: 0;
     transform: translateY(20%);
     position: static;
-  }
-
-  .title-content {
-    position: static;
-    top: 0;
-    transform: translateY(50%);
   }
 
   .custom-mobile-hidden {
