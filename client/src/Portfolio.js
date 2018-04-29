@@ -39,7 +39,7 @@ class Portfolio extends Component {
         return (
             <div>
                 <Responsive as={Transition}
-                    {...Responsive.onlyComputer}
+                    minWidth={768}
                     visible={this.state.menuVisible}
                     animation="fade down">
                     <Menu
@@ -54,7 +54,7 @@ class Portfolio extends Component {
                     </Menu>
                 </Responsive>
                 <Responsive as={Menu}
-                    maxWidth={991}
+                    maxWidth={767}
                     fixed="top"
                     inverted
                     pointing

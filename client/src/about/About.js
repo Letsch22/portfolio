@@ -20,7 +20,7 @@ class About extends Component {
                 <Grid centered container>
                     <Grid.Column width={7} only="computer">
                     </Grid.Column>
-                    <Grid.Column computer={9} mobile={16} tablet={16}>
+                    <Grid.Column computer={9} mobile={16} tablet={11}>
                         <Header>Myself</Header>
                         {this.state.about.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                     </Grid.Column>

@@ -40,8 +40,8 @@ class Projects extends Component {
             <div key={i} id={project.modalTarget} className="custom-modal">
                 <Grid padded centered doubling>
                     <Grid.Row className="modal-header" columns={3}>
-                        <Grid.Column computer={3} only="computer"/>
-                        <Grid.Column computer={10} mobile={13} tablet={13}>
+                        <Grid.Column computer={3} only="tablet computer"/>
+                        <Grid.Column computer={10} mobile={13} tablet={10}>
                             <Header color="blue" size="huge">{project.header}</Header>
                         </Grid.Column>
                         <Grid.Column width={3} textAlign="right">
@@ -49,21 +49,21 @@ class Projects extends Component {
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row className="modal-content stackable" columns={4}>
-                        <Grid.Column width={3} only="computer"/>
-                        <Grid.Column width={3}>
+                        <Grid.Column width={3} only="tablet computer"/>
+                        <Grid.Column computer={3} mobile={3} tablet={4}>
                             <Header color="blue" size="large">What Was Used</Header>
                             <List items={project.modalSkills}/>
                             <Header color="blue" size="large">What For</Header>
                             <p>{project.modalWhatFor}</p>
                         </Grid.Column>
-                        <Grid.Column width={1}/>
+                        <Grid.Column width={1} only="computer"/>
                         <Grid.Column width={6}>
                             <Header color="blue" size="medium">{project.modalSubheader}</Header>
                             {project.modalDescription.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                             <Header color="blue" size="large">See For Yourself</Header>
                             {project.modalButtons.map((button, i) => this.renderModalButton(button, i))}
                         </Grid.Column>
-                        <Grid.Column width={3} only="computer"/>
+                        <Grid.Column width={3} only="tablet computer"/>
                     </Grid.Row>
                 </Grid>
             </div>

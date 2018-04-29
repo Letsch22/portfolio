@@ -8,7 +8,7 @@ class Title extends Component {
         return(
             <div id="home">
                 <Responsive as={Menu}
-                    {...Responsive.onlyComputer}
+                    minWidth={768}
                     inverted
                     pointing
                     secondary
