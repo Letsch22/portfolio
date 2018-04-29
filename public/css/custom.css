@@ -177,14 +177,10 @@ body, html {
   font-size: 4em !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .header-links {
-    top: 0;
-    transform: translateY(20%);
-    position: static;
-  }
+.sidebar-menu {
+  width: calc(100% - 2px);
+}
 
-  .custom-mobile-hidden {
-    display: none !important;
-  }
+.close-button {
+  margin-bottom: 1em !important;
 }

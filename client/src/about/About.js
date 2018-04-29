@@ -17,10 +17,10 @@ class About extends Component {
     render() {
         return(
             <div id="myself">
-                <Grid centered>
-                    <Grid.Column width={5} only="computer">
+                <Grid centered container>
+                    <Grid.Column width={7} only="computer">
                     </Grid.Column>
-                    <Grid.Column computer={7} mobile={12}>
+                    <Grid.Column computer={9} mobile={16} tablet={16}>
                         <Header>Myself</Header>
                         {this.state.about.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                     </Grid.Column>

@@ -16,16 +16,16 @@ class MenuItems extends Component {
     }
 
     render() {
-        if (this.props.isHeader) {
+        if (this.props.hasIcons) {
             return(
-                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
+                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className={this.props.className}>
                     {this.state.items.map((item, i) => this.renderItem(item, i))}
-                    <IconSet isFooter={false} className="custom-mobile-hidden"/>
+                    <IconSet isFooter={false}/>
                 </Scrollspy>
             );
         } else {
             return(
-                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className="ui menu-items container">
+                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className={this.props.className}>
                     {this.state.items.map((item, i) => this.renderItem(item, i))}
                 </Scrollspy>
             );
@@ -34,8 +34,8 @@ class MenuItems extends Component {
 }
 
 MenuItems.propTypes = {
-    isHeader: PropTypes.bool.isRequired
+    hasIcons: PropTypes.bool.isRequired,
+    className: PropTypes.string
 };
-
 
 export default MenuItems;

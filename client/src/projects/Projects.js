@@ -38,10 +38,10 @@ class Projects extends Component {
     renderModal(project, i) {
         return (
             <div key={i} id={project.modalTarget} className="custom-modal">
-                <Grid relaxed padded centered doubling>
+                <Grid padded centered doubling>
                     <Grid.Row className="modal-header" columns={3}>
-                        <Grid.Column width={3}/>
-                        <Grid.Column width={10}>
+                        <Grid.Column computer={3} only="computer"/>
+                        <Grid.Column computer={10} mobile={13} tablet={13}>
                             <Header color="blue" size="huge">{project.header}</Header>
                         </Grid.Column>
                         <Grid.Column width={3} textAlign="right">

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Transition, Visibility } from "semantic-ui-react";
+import { Icon, Menu, Responsive, Sidebar, Transition, Visibility } from "semantic-ui-react";
 import MenuItems from "./elements/MenuItems";
 import Title from "./title/Title";
 import About from "./about/About";
@@ -12,23 +12,36 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            visible: false
+            menuVisible: false,
+            sidebarVisible: false
         };
         this.transitionMenuIn = this.transitionMenuIn.bind(this);
         this.transitionMenuOut = this.transitionMenuOut.bind(this);
+        this.transitionSidebarIn = this.transitionSidebarIn.bind(this);
+        this.transitionSidebarOut = this.transitionSidebarOut.bind(this);
     }
 
     transitionMenuOut() {
-        this.setState({ visible: false });
+        this.setState({ menuVisible: false });
     }
     transitionMenuIn() {
-        this.setState({ visible: true });
+        this.setState({ menuVisible: true });
+    }
+
+    transitionSidebarOut() {
+        this.setState({ sidebarVisible: false });
+    }
+    transitionSidebarIn() {
+        this.setState({ sidebarVisible: true });
     }
 
     render() {
         return (
             <div>
-                <Transition visible={this.state.visible} animation="fade down">
+                <Responsive as={Transition}
+                    {...Responsive.onlyComputer}
+                    visible={this.state.menuVisible}
+                    animation="fade down">
                     <Menu
                         fixed="top"
                         inverted
@@ -37,9 +50,40 @@ class Portfolio extends Component {
                         size="massive"
                         color="teal"
                         className="menu-header">
-                        <MenuItems isHeader={false}/>
+                        <MenuItems hasIcons={false} className="ui container"/>
                     </Menu>
-                </Transition>
+                </Responsive>
+                <Responsive as={Menu}
+                    maxWidth={991}
+                    fixed="top"
+                    inverted
+                    pointing
+                    secondary
+                    icon
+                    size="massive"
+                    className="menu-header">
+                    <Menu.Item position="right" icon link onClick={this.transitionSidebarIn}>
+                        <Icon name="sidebar" color="teal" size="large"/>
+                    </Menu.Item>
+                </Responsive>
+                <Sidebar
+                    as={Menu}
+                    visible={this.state.sidebarVisible}
+                    animation="overlay"
+                    direction="right"
+                    inverted
+                    pointing
+                    secondary
+                    color="teal"
+                    size="massive"
+                    className="menu-header container"
+                    vertical>
+                    <Menu.Item icon link onClick={this.transitionSidebarOut} className="sidebar-menu close-button">
+                        <Icon name="close" color="teal" size="large"/>
+                    </Menu.Item>
+                    <MenuItems hasIcons={false} className="sidebar-menu">
+                    </MenuItems>
+                </Sidebar>
                 <Visibility
                     once={false}
                     offset={[10, 10]}
