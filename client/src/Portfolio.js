@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Icon, Menu, Responsive, Sidebar, Transition, Visibility } from "semantic-ui-react";
+import { Menu, Responsive, Transition, Visibility } from "semantic-ui-react";
 import MenuItems from "./elements/MenuItems";
 import Title from "./title/Title";
 import About from "./about/About";
@@ -55,35 +55,29 @@ class Portfolio extends Component {
                 </Responsive>
                 <Responsive as={Menu}
                     maxWidth={767}
+                    minWidth={372}
+                    compact
                     fixed="top"
                     inverted
                     pointing
                     secondary
-                    icon
                     size="massive"
+                    color="teal"
                     className="menu-header">
-                    <Menu.Item position="right" icon link onClick={this.transitionSidebarIn}>
-                        <Icon name="sidebar" color="teal" size="large"/>
-                    </Menu.Item>
+                    <MenuItems hasIcons={false} className="ui container centered grid mobile-menu-grid"/>
                 </Responsive>
-                <Sidebar
-                    as={Menu}
-                    visible={this.state.sidebarVisible}
-                    animation="overlay"
-                    direction="right"
+                <Responsive as={Menu}
+                    maxWidth={371}
+                    compact
+                    fixed="top"
                     inverted
                     pointing
                     secondary
+                    size="large"
                     color="teal"
-                    size="massive"
-                    className="menu-header container"
-                    vertical>
-                    <Menu.Item icon link onClick={this.transitionSidebarOut} className="sidebar-menu close-button">
-                        <Icon name="close" color="teal" size="large"/>
-                    </Menu.Item>
-                    <MenuItems hasIcons={false} className="sidebar-menu">
-                    </MenuItems>
-                </Sidebar>
+                    className="menu-header">
+                    <MenuItems hasIcons={false} className="ui container centered grid mobile-menu-grid"/>
+                </Responsive>
                 <Visibility
                     once={false}
                     offset={[10, 10]}

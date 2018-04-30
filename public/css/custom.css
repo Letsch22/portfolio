@@ -184,3 +184,8 @@ body, html {
 .close-button {
   margin-bottom: 1em !important;
 }
+
+.mobile-menu-grid {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

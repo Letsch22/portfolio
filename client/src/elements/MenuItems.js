@@ -18,14 +18,14 @@ class MenuItems extends Component {
     render() {
         if (this.props.hasIcons) {
             return(
-                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className={this.props.className}>
+                <Scrollspy items={this.state.items} offset={-50} currentClassName="active" componentTag="div" className={this.props.className}>
                     {this.state.items.map((item, i) => this.renderItem(item, i))}
                     <IconSet isFooter={false}/>
                 </Scrollspy>
             );
         } else {
             return(
-                <Scrollspy items={this.state.items} currentClassName="active" componentTag="div" className={this.props.className}>
+                <Scrollspy items={this.state.items} offset={-50} currentClassName="active" componentTag="div" className={this.props.className}>
                     {this.state.items.map((item, i) => this.renderItem(item, i))}
                 </Scrollspy>
             );
