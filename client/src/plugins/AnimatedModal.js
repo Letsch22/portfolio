@@ -14,7 +14,7 @@ class AnimatedModal extends Component {
     componentDidMount() {
         $(this.node).animatedModal({
             modalTarget: this.props.modalTarget,
-            color: this.props.color,
+            color: this.props.modalColor,
             animatedIn: this.props.animatedIn,
             animatedOut: this.props.animatedOut,
             animationDuration: this.props.animationDuration,
@@ -26,7 +26,7 @@ class AnimatedModal extends Component {
 
     render() {
         return(
-            <a href={"#" + this.props.modalTarget} ref={node => this.node = node}>
+            <a href={"#" + this.props.modalTarget} ref={node => this.node = node} className={this.props.className}>
                 {this.props.children}
             </a>
         );
@@ -35,17 +35,18 @@ class AnimatedModal extends Component {
 
 AnimatedModal.propTypes = {
     modalTarget: PropTypes.string,
-    color: PropTypes.string,
+    modalColor: PropTypes.string,
     animatedIn: PropTypes.string,
     animatedOut: PropTypes.string,
     animationDuration: PropTypes.string,
     overflow: PropTypes.oneOf(["scroll", "hidden", "auto"]),
-    children: PropTypes.node
+    children: PropTypes.node,
+    className: PropTypes.string
 };
 
 AnimatedModal.defaultProps = {
     modalTarget: "animatedModal",
-    color: "#39BEB9",
+    modalColor: "#39BEB9",
     animatedIn: "zoomIn",
     animatedOut: "zoomOut",
     animationDuration: ".6s",

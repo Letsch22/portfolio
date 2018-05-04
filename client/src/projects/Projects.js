@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Card, Container, Grid, Header, List, Transition, Visibility } from "semantic-ui-react";
+import { Button, Card, Container, Grid, Header, List, Responsive, Transition, Visibility } from "semantic-ui-react";
 import Project from "./project/Project";
 
 class Projects extends Component {
@@ -20,7 +20,7 @@ class Projects extends Component {
             .then(projects => this.setState({projects}));
     }
 
-    renderProject(project, i) {
+    renderProject(project, i, isMobile) {
         return (
             <Project
                 key={i}
@@ -32,7 +32,7 @@ class Projects extends Component {
                 extra={project.extra}
                 extraIcon={project.extraIcon}
                 extraLink={project.extraLink}
-            />
+                mobile={isMobile}/>
         );
     }
     renderModal(project, i) {
@@ -84,9 +84,14 @@ class Projects extends Component {
                         <Header>Projects</Header>
                     </Visibility>
                     <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
-                        <Card.Group itemsPerRow={3} centered textAlign="left" stackable>
-                            {this.state.projects.map((project, i) => this.renderProject(project, i))}
-                        </Card.Group>
+                        <Responsive {...Responsive.onlyComputer} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
+                            {this.state.projects.map((project, i) => this.renderProject(project, i, false))}
+                        </Responsive>
+                    </Transition>
+                    <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
+                        <Responsive maxWidth={767} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
+                            {this.state.projects.map((project, i) => this.renderProject(project, i, true))}
+                        </Responsive>
                     </Transition>
                     {this.state.projects.map((project, i) => this.renderModal(project, i))}
                 </Container>
