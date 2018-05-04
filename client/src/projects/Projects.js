@@ -89,7 +89,7 @@ class Projects extends Component {
                         </Responsive>
                     </Transition>
                     <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
-                        <Responsive maxWidth={767} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
+                        <Responsive maxWidth={991} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
                             {this.state.projects.map((project, i) => this.renderProject(project, i, true))}
                         </Responsive>
                     </Transition>
