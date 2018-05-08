@@ -3,7 +3,7 @@ import { Button, Card, Dimmer, Icon, Image } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import AnimatedModal from "../../plugins/AnimatedModal";
 
-class Project extends Component {
+class ProjectCard extends Component {
 
     constructor(props) {
         super(props);
@@ -103,7 +103,7 @@ class Project extends Component {
     }
 }
 
-Project.propTypes = {
+ProjectCard.propTypes = {
     mobile: PropTypes.bool.isRequired,
     header: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
@@ -115,4 +115,4 @@ Project.propTypes = {
     extraIcon: PropTypes.string
 };
 
-export default Project;
+export default ProjectCard;
