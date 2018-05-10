@@ -12,27 +12,18 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            menuVisible: false,
-            sidebarVisible: false
+            menuVisible: false
         };
         this.transitionMenuIn = this.transitionMenuIn.bind(this);
         this.transitionMenuOut = this.transitionMenuOut.bind(this);
-        this.transitionSidebarIn = this.transitionSidebarIn.bind(this);
-        this.transitionSidebarOut = this.transitionSidebarOut.bind(this);
     }
 
-    transitionMenuOut() {
-        this.setState({ menuVisible: false });
-    }
     transitionMenuIn() {
         this.setState({ menuVisible: true });
     }
 
-    transitionSidebarOut() {
-        this.setState({ sidebarVisible: false });
-    }
-    transitionSidebarIn() {
-        this.setState({ sidebarVisible: true });
+    transitionMenuOut() {
+        this.setState({ menuVisible: false });
     }
 
     render() {

@@ -195,6 +195,19 @@ button[class*="close-"] {
   top: 1em;
   right: 1em;
   z-index: 10;
+  opacity: 0;
+}
+
+div[class*="-off"].custom-modal button[class*="close-"] {
+  animation-name: bounceOutRight;
+  animation-duration: 0.7s;
+}
+
+div[class*="-on"].custom-modal button[class*="close-"] {
+  animation-name: bounceIn;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 767px) {
