@@ -12,7 +12,7 @@
 @fontFourName      : 'Playfair Display';
 @fontSmoothing     : antialiased;
 
-@headerFont        : @fontOneName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : @fontOneName, Impact, fantasy;
 @pageFont          : @fontTwoName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 @importGoogleFonts : true;

@@ -50,7 +50,7 @@ body, html {
 
 .title-content > .large {
   font-size: 3em !important;
-  font-family: 'Dancing Script' !important;
+  font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive !important;
   color: #F7F5F4 !important;
 }
 
@@ -78,7 +78,7 @@ body, html {
 
 #myself .header {
   font-size: 4em !important;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive;
   color: #F7F5F4;
   text-align: center;
 }
@@ -100,15 +100,15 @@ body, html {
 }
 
 #resume .item i {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
 #resume p i {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
 .resume-header .header {
-  font-family: 'Dancing Script' !important;
+  font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive !important;
   font-size: 3em !important;
 }
 
@@ -136,7 +136,7 @@ body, html {
 
 #projects > .container > div > .header {
   color: #F7F5F4;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive;
   font-size: 3.5em !important;
   padding: 0.25em;
   padding-bottom: 0.5em;
@@ -205,7 +205,7 @@ div[class*="-on"].custom-modal button[class*="close-"] {
 
 .footer .header {
   color: #F7F5F4;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive;
   font-size: 3.5em !important;
 }
 
