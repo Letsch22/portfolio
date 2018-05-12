@@ -46,13 +46,26 @@ class Portfolio extends Component {
                 </Responsive>
                 <Responsive as={Menu}
                     maxWidth={767}
-                    minWidth={372}
+                    minWidth={401}
                     compact
                     fixed="top"
                     inverted
                     pointing
                     secondary
                     size="massive"
+                    color="teal"
+                    className="menu-header">
+                    <MenuItems hasIcons={false} className="ui container centered grid mobile-menu-grid"/>
+                </Responsive>
+                <Responsive as={Menu}
+                    maxWidth={400}
+                    minWidth={372}
+                    compact
+                    fixed="top"
+                    inverted
+                    pointing
+                    secondary
+                    size="huge"
                     color="teal"
                     className="menu-header">
                     <MenuItems hasIcons={false} className="ui container centered grid mobile-menu-grid"/>
