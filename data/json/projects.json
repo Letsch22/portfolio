@@ -13,7 +13,7 @@
     "modalSkills": ["Python", "Flask", "JavaScript", "Vue.js", "spaCy", "Beautiful Soup", "Redis", "HTML", "CSS", "Docker"],
     "modalWhatFor": "This bot was built by my teammates and I for a Northwestern EECS project course. We built it to contribute to the professor's quarter-long goal for the course: to have three discrete teams all contribute independent systems that would come together to be a first aid bot. Our team was responsible for providing the central chatbot interface and commands as well as first aid procedures parsed from the web.",
     "modalButtons": [{
-            "link": "https://worst-aid.herokuapp.com/",
+            "link": "http://firstaid.danielletscher.com/",
             "name": "Live Demo",
             "icon": "external"
         },
@@ -25,7 +25,7 @@
     ],
     "extra": "Check it out",
     "extraIcon": "external",
-    "extraLink": "https://worst-aid.herokuapp.com/"
+    "extraLink": "http://firstaid.danielletscher.com/"
 }, {
     "header": "ESP8266 OCCUPANCY SENSOR",
     "image": "/images/esp8266.png",
