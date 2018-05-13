@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Obfuscate from "react-obfuscate";
-import { Container, Icon, Menu} from "semantic-ui-react";
+import { Container, Icon, Menu, Responsive} from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 class IconSet extends Component {
@@ -38,13 +38,15 @@ class IconSet extends Component {
         if (icon.name==="mail") {
             return(
                 <Obfuscate key={i} email={icon.link}>
-                    <Icon key={i} color="teal" link name={icon.name} size="massive"/>
+                    <Responsive minWidth={351} as={Icon} key={i} color="teal" link name={icon.name} size="massive"/>
+                    <Responsive maxWidth={350} as={Icon} key={i} color="teal" link name={icon.name} size="huge"/>
                 </Obfuscate>
             );
         } else {
             return(
                 <a key={i} href={icon.link} target="_blank">
-                    <Icon key={i} color="teal" link name={icon.name} size="massive"/>
+                    <Responsive minWidth={351} as={Icon} key={i} color="teal" link name={icon.name} size="massive"/>
+                    <Responsive maxWidth={350} as={Icon} key={i} color="teal" link name={icon.name} size="huge"/>
                 </a>
             );
         }
