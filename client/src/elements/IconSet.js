@@ -39,14 +39,14 @@ class IconSet extends Component {
             return(
                 <Obfuscate key={i} email={icon.link}>
                     <Responsive minWidth={351} as={Icon} key={i} color="teal" link name={icon.name} size="massive"/>
-                    <Responsive maxWidth={350} as={Icon} key={i} color="teal" link name={icon.name} size="huge"/>
+                    <Responsive maxWidth={350} as={Icon} key={i + this.state.icons.size} color="teal" link name={icon.name} size="huge"/>
                 </Obfuscate>
             );
         } else {
             return(
                 <a key={i} href={icon.link} target="_blank">
                     <Responsive minWidth={351} as={Icon} key={i} color="teal" link name={icon.name} size="massive"/>
-                    <Responsive maxWidth={350} as={Icon} key={i} color="teal" link name={icon.name} size="huge"/>
+                    <Responsive maxWidth={350} as={Icon} key={i + this.state.icons.size} color="teal" link name={icon.name} size="huge"/>
                 </a>
             );
         }
