@@ -57,16 +57,14 @@ class Projects extends Component {
                     <Visibility onBottomVisible={this.flipCards} once>
                         <Header>Projects</Header>
                     </Visibility>
-                    <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
-                        <Responsive {...Responsive.onlyComputer} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
+                    <Responsive {...Responsive.onlyComputer} as={Transition} animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
+                        <Card.Group itemsPerRow={3} centered textAlign="left" stackable>
                             {this.state.projects.map((project, i) => this.renderCard(project, i, false))}
-                        </Responsive>
-                    </Transition>
-                    <Transition animation="vertical flip" visible={this.state.visible} mountOnShow={false} duration={750}>
-                        <Responsive maxWidth={991} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
-                            {this.state.projects.map((project, i) => this.renderCard(project, i, true))}
-                        </Responsive>
-                    </Transition>
+                        </Card.Group>
+                    </Responsive>
+                    <Responsive maxWidth={991} as={Card.Group} itemsPerRow={3} centered textAlign="left" stackable>
+                        {this.state.projects.map((project, i) => this.renderCard(project, i, true))}
+                    </Responsive>
                     {this.state.projects.map((project, i) => this.renderModal(project, i))}
                 </Container>
             </div>
