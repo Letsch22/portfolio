@@ -172,6 +172,10 @@ button[class*="close-"] {
   opacity: 0;
 }
 
+div[class*="-on"].custom-modal {
+  -webkit-overflow-scrolling: touch;
+}
+
 div[class*="-off"].custom-modal button[class*="close-"] {
   animation-name: bounceOutRight;
   animation-duration: 0.7s;

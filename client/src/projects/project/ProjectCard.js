@@ -70,6 +70,7 @@ class ProjectCard extends Component {
                     extra={mobileExtra}
                     as={AnimatedModal}
                     modalTarget={this.props.modalTarget}
+                    overflow="scroll"
                     animatedOut="bounceOut"
                     modalColor="#F7F5F4"/>
             );
