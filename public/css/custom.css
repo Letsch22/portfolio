@@ -233,4 +233,8 @@ div[class*="-on"].custom-modal button[class*="close-"] {
   .devicons .item + .item {
     margin-left: 0.1em !important;
   }
+
+  .footer {
+    height: 70vh;
+  }
 }
