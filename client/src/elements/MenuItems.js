@@ -8,7 +8,7 @@ class MenuItems extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { items: ["home", "myself", "resume", "projects"] };
+        this.state = { items: ["home", "about", "resume", "projects"] };
     }
 
     renderItem(name, i) {

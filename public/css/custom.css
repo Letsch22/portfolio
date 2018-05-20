@@ -63,9 +63,9 @@ body, html {
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%235c5a61' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-/* Myself */
+/* About Me */
 
-#myself {
+#about {
   padding-top: 8vh;
   padding-bottom: 4em;
   background-image: url('/images/background_original.jpg');
@@ -76,14 +76,14 @@ body, html {
   background-position-x: 25%;
 }
 
-#myself .header {
+#about .header {
   font-size: 4em !important;
   font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive;
   color: #F7F5F4;
   text-align: center;
 }
 
-#myself p {
+#about p {
   color: #F7F5F4;
   font-size: 1.15em;
 }
@@ -243,7 +243,7 @@ div[class*="-on"].custom-modal button[class*="close-"] {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ */
-  #myself {
+  #about {
     background-image: url('/images/background_blended.jpg');
     background-color: none;
     background-blend-mode: none;
@@ -252,7 +252,7 @@ div[class*="-on"].custom-modal button[class*="close-"] {
 
 @supports (-ms-accelerator:true) {
   /* IE Edge 12+13 CSS styles go here */
-  #myself {
+  #about {
     background-image: url('/images/background_blended.jpg');
     background-color: none;
     background-blend-mode: none;
@@ -261,7 +261,7 @@ div[class*="-on"].custom-modal button[class*="close-"] {
 
 @supports (-ms-ime-align: auto) {
   /* Edge13&14 CSS styles go here */
-  #myself {
+  #about {
     background-image: url('/images/background_blended.jpg');
     background-color: none;
     background-blend-mode: none;
