@@ -11,7 +11,7 @@ class Footer extends Component {
                     <Icon size="large" name="arrow up"/>
                 </Button>
                 <Container textAlign="center">
-                    <Header>Thanks for visiting!</Header>
+                    <Header>Thanks for visiting</Header>
                     <IconSet isFooter={true}/>
                 </Container>
             </div>
