@@ -53,7 +53,7 @@ class ProjectCard extends Component {
         var mobileExtra = (
             <p>
                 <Icon name="hand pointer"/>
-                Click me to learn more!
+                Tap to learn more
             </p>
         );
 
