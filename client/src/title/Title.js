@@ -18,8 +18,8 @@ class Title extends Component {
                     <MenuItems hasIcons={true} className="ui container"/>
                 </Responsive>
                 <Container className="title-content">
-                    <Header size="huge" color="teal">DANIEL LETSCHER</Header>
-                    <Header size="large">Software Engineer</Header>
+                    <Header as="h1" size="huge" color="teal">DANIEL LETSCHER</Header>
+                    <Header as="h2" size="large">Software Engineer</Header>
                 </Container>
             </div>
         );
