@@ -9,6 +9,16 @@ var documents = require("./routes/documents");
 
 var app = express();
 
+// www to non-www redirect
+app.set("trust proxy", true);
+app.use(function (req, res, next) {
+    if (req.headers.host.slice(0, 4) === "www.") {
+        var newHost = req.headers.host.slice(4);
+        return res.redirect(301, req.protocol + "://" + newHost + req.originalUrl);
+    }
+    next();
+});
+
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
