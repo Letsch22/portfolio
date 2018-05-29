@@ -5,6 +5,12 @@
             "title": "NORTHWESTERN UNIVERSITY",
             "lists": [
                 [{
+                        "isItalics": false,
+                        "content": "Evanston, Illinois",
+                        "icon": "marker"
+                    }
+                ],
+                [{
                         "isItalics": true,
                         "content": "Bachelor of Arts"
                     },
@@ -37,6 +43,12 @@
                 "title": "ORACLE",
                 "lists": [
                     [{
+                            "isItalics": false,
+                            "content": "San Mateo, California",
+                            "icon": "marker"
+                        }
+                    ],
+                    [{
                             "isItalics": true,
                             "content": "Associate Software Engineer"
                         },
@@ -67,6 +79,12 @@
                 "title": "NETSUITE",
                 "lists": [
                     [{
+                            "isItalics": false,
+                            "content": "San Mateo, California",
+                            "icon": "marker"
+                        }
+                    ],
+                    [{
                             "isItalics": true,
                             "content": "Software Engineering Intern"
                         },
@@ -88,6 +106,12 @@
             {
                 "title": "EXOSITE",
                 "lists": [
+                    [{
+                            "isItalics": false,
+                            "content": "Minneapolis, Minnesota",
+                            "icon": "marker"
+                        }
+                    ],
                     [{
                             "isItalics": true,
                             "content": "Support Services Intern"

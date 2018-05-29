@@ -13,10 +13,10 @@ class ResumeContent extends Component {
         var listItems = [];
         for (var j = 0; j < list.length; j++) {
             if (list[j].isItalics) {
-                listItems.push(<List.Item key={j}><i>{list[j].content}</i></List.Item>);
+                listItems.push(<List.Item key={j} className="italics" content={<i>{list[j].content}</i>}/>);
             }
             else {
-                listItems.push(<List.Item key={j}>{list[j].content}</List.Item>);
+                listItems.push(<List.Item key={j} content={list[j].content} icon={list[j].icon}/>);
             }
         }
         return(<List key={i} bulleted horizontal>{listItems}</List>);

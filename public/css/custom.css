@@ -99,11 +99,7 @@ body, html {
   line-height: 2em;
 }
 
-#resume .item i {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
-}
-
-#resume p i {
+.italics {
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
 }
 
