@@ -120,6 +120,11 @@ body, html {
   margin-left: 0.15em !important;
 }
 
+.sticky {
+  /* TODO remove once react-semantic-ui fixes this bug */
+  z-index: 0 !important;
+}
+
 /* Projects */
 
 #projects {
@@ -217,7 +222,6 @@ div[class*="-on"].custom-modal button[class*="close-"] {
 .footer .massive {
   font-size: 4em !important;
 }
-
 
 /* responsive */
 

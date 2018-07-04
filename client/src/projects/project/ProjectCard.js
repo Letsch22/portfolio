@@ -26,9 +26,7 @@ class ProjectCard extends Component {
         const content = (
             <Button
                 inverted
-                color="grey"
                 size="huge"
-                primary
                 as={AnimatedModal}
                 modalTarget={this.props.modalTarget}
                 animatedOut="bounceOut"
