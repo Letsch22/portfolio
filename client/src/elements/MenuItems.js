@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Scrollspy from "react-scrollspy";
-import { Menu } from "semantic-ui-react";
+import { Link } from "react-scroll";
 import IconSet from "./IconSet";
 import PropTypes from "prop-types";
 
@@ -12,7 +12,7 @@ class MenuItems extends Component {
     }
 
     renderItem(name, i) {
-        return(<Menu.Item key={i} link href={"#"+name}>{name.toUpperCase()}</Menu.Item>);
+        return(<Link key={i} to={name} spy={false} smooth={true} duration={500} className="item">{name.toUpperCase()}</Link>);
     }
 
     render() {
