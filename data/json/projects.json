@@ -1,4 +1,27 @@
 [{
+    "header": "LISTAPP",
+    "image": "/images/listapp.png",
+    "meta": "Created in 2019",
+    "description": "A full-stack Laravel and Vue.js app for creating and sharing lists",
+    "modalTarget": "listapp",
+    "modalSubheader": "A full-stack Laravel and Vue.js app for creating and sharing lists",
+    "modalDescription": [
+        "I built this app using every part of the web application stack. I created the frontend using Vue.js and styled it with Vuetify. I built the backend using Laravel connected to a MySQL database.",
+        "Using Vue.js, I was able to build-out the frontend logic of the application. The application consists of various custom Vue components which are placed in view by Vue Router. Those Vue components consist of various Material Design components provided by the Vuetify framework. Data that is retrieved from the backend is held in a Vuex store along with other frontend data that needs to be used across the application. All of the frontend scripts, styles, images, and components are compiled during deployment by Laravel Mix, a wrapper for Webpack.",
+        "I used Laravel, a PHP framework, for the backend logic. Routing and logic held in controllers was written in PHP while migrations, queries, and models for the MySQL database were created using the Eloquent ORM. Authentication and registration of users is handled by Laravel Passport. Both web and API versions exist of every endpoint so that the frontend always has proper data whether directly navigating to a route or transitioning between routes while using the app.",
+        "You should feel free to use listapp yourself to create some lists of your own. Or just browse the most popular lists to see if anything inspires you."
+    ],
+    "modalSkills": ["Laravel", "Vue.js", "PHP", "JavaScript", "Eloquent ORM", "MySQL", "Node.js", "Laravel Passport", "Laravel Mix", "HTML", "CSS"],
+    "modalWhatFor": "I built this app in order to learn the complete process of building a full-stack web application. While previous projects of mine had touched various parts of the application stack, I had never implemented something from the ground-up that covered the entire spectrum of the frontend, backend, CRUD, authentication, deployment, and more. This project gave me the opportunity to do just that along with learning some frameworks and languages that were new to me.",
+    "modalButtons": [{
+        "link": "http://listapp.danielletscher.com/",
+        "name": "Open listapp",
+        "icon": "external"
+    }],
+    "extra": "Check it out",
+    "extraIcon": "external",
+    "extraLink": "http://listapp.danielletscher.com/"
+}, {
     "header": "FIRST AID BOT",
     "image": "/images/first-aid.png",
     "meta": "Created in 2017",
@@ -26,25 +49,6 @@
     "extra": "Check it out",
     "extraIcon": "external",
     "extraLink": "http://firstaid.danielletscher.com/"
-}, {
-    "header": "ESP8266 OCCUPANCY SENSOR",
-    "image": "/images/esp8266.png",
-    "meta": "Created in 2015",
-    "description": "A custom-built Internet of Things device that sends occupancy infomation about a conference room to a dashboard via Exosite's cloud",
-    "modalTarget": "esp8266",
-    "modalSubheader": "An Internet of Things device that scans a room for occupants and provides other relevant environmental details to an Exosite dashboard",
-    "modalDescription": [
-        "When placed in a room, this sensor records movement and temperature data. It then sends that data to Exosite's cloud for processing. Users can then view the processed data and useful information on a dashboard built on Exosite's cloud. If enough rooms are covered, the dashboard can report which rooms are open for use.",
-        "I built this sensor around the ESP8266 WiFi chip. That chip is easy to use and can connect to various sensors using existing firmware. It also has the benefit of being more power efficient than comparable chipsets. For sensors, I used a temperature sensor to provide temperature readouts for the room and a motion detector to use as the basis of whether or not the room is occupied. I wrote the firmware for the chipset and its sensors using Wiring, an Arduino variant of C++. The firmware not only pushes data to Exosites cloud but puts the device into a power saving mode when no motions are detected for extended battery use. Once the data reaches Exosite's cloud, Lua scripts process the data to report temperature and a calculation of whether or not the room is occupied based on the number of movements reported. The information is then displayed as a custom JavaScript widget on a public Exosite dashboard for employees to view.",
-        "For display and final delivery, I soldered the wiring together and enclosed the units in plastic cases. The units were then placed in some of Exosite's most-used conference rooms for employee convenience."
-    ],
-    "modalSkills": ["Arduino", "Wiring (C++)", "Lua", "JavaScript", "Circuitry"],
-    "modalWhatFor": "As part of my internship with Exosite, I was tasked with developing an Internet of Things proof-of-concept solution for the duration of my internship while I performed my other responsibilities as an intern. I came up with the idea after seeing how often my coworkers would wander around the office searching for an open conference room. The device was meant to show the power of Exosite's platform while giving employees the option to check for available conference rooms remotely.",
-    "modalButtons": [{
-        "link": "/documents/exosite.pdf",
-        "name": "Internship Summary",
-        "icon": "file pdf outline"
-    }]
 }, {
     "header": "THIS SITE",
     "image": "/images/thissite.png",

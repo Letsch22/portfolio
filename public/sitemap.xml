@@ -4,8 +4,4 @@
         <loc>http://danielletscher.com/</loc>
         <priority>1.0</priority>
    </url>
-   <url>
-        <loc>http://danielletscher.com/documents/exosite.pdf</loc>
-        <priority>0.1</priority>
-   </url>
 </urlset>

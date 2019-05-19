@@ -1,91 +1,100 @@
-[{
-    "id": 1,
-    "name": "Skills",
-    "segments": [{
-            "title": "LANGUAGES",
-            "subtitle": "Descending proficiency",
-            "isText": false,
-            "lists": [
-                [{
-                        "content": "devicon-java-plain",
-                        "caption": "Java"
-                    },
-                    {
-                        "content": "devicon-python-plain",
-                        "caption": "Python"
-                    },
-                    {
-                        "content": "devicon-csharp-plain",
-                        "caption": "C#"
-                    },
-                    {
-                        "content": "devicon-oracle-original",
-                        "caption": "Oracle SQL"
-                    },
-                    {
-                        "content": "devicon-javascript-plain",
-                        "caption": "JavaScript"
-                    },
-                    {
-                        "content": "devicon-html5-plain",
-                        "caption": "HTML"
-                    },
-                    {
-                        "content": "devicon-css3-plain",
-                        "caption": "CSS"
-                    },
-                    {
-                        "content": "devicon-cplusplus-plain",
-                        "caption": "C++"
-                    }
+[
+    {
+        "id": 1,
+        "name": "Skills",
+        "segments": [
+            {
+                "title": "LANGUAGES",
+                "subtitle": "Descending proficiency",
+                "isText": false,
+                "lists": [
+                    [
+                        {
+                            "content": "devicon-java-plain",
+                            "caption": "Java"
+                        },
+                        {
+                            "content": "devicon-oracle-original",
+                            "caption": "Oracle SQL"
+                        },
+                        {
+                            "content": "devicon-javascript-plain",
+                            "caption": "JavaScript"
+                        },
+                        {
+                            "content": "devicon-html5-plain",
+                            "caption": "HTML"
+                        },
+                        {
+                            "content": "devicon-css3-plain",
+                            "caption": "CSS"
+                        },
+                        {
+                            "content": "devicon-python-plain",
+                            "caption": "Python"
+                        },
+                        {
+                            "content": "devicon-php-plain",
+                            "caption": "PHP"
+                        }
+                    ]
                 ]
-            ]
-        },
-        {
-            "id": 2,
-            "title": "FRAMEWORKS",
-            "subtitle": "Descending proficiency",
-            "isText": false,
-            "lists": [
-                [{
-                        "content": "devicon-nodejs-plain",
-                        "caption": "Node.js"
-                    },
-                    {
-                        "content": "devicon-react-original",
-                        "caption": "React"
-                    },
-                    {
-                        "content": "devicon-express-original",
-                        "caption": "Express"
-                    },
-                    {
-                        "content": "devicon-vuejs-plain",
-                        "caption": "Vue.js"
-                    }
+            },
+            {
+                "id": 2,
+                "title": "FRAMEWORKS",
+                "subtitle": "Descending proficiency",
+                "isText": false,
+                "lists": [
+                    [
+                        {
+                            "content": "devicon-vuejs-plain",
+                            "caption": "Vue.js"
+                        },
+                        {
+                            "content": "devicon-nodejs-plain",
+                            "caption": "Node.js"
+                        },
+                        {
+                            "content": "devicon-laravel-plain",
+                            "caption": "Laravel"
+                        },
+                        {
+                            "content": "devicon-react-original",
+                            "caption": "React"
+                        },
+                        {
+                            "content": "devicon-express-original",
+                            "caption": "Express"
+                        }
+                    ]
                 ]
-            ]
-        },
-        {
-            "id": 3,
-            "title": "PRACTICES",
-            "subtitle": "",
-            "isText": true,
-            "lists": [
-                [{
-                        "content": "Test Driven Development"
-                    },
-                    {
-                        "content": "Scrum"
-                    },
-                    {
-                        "content": "Feature Design"
-                    },
-                    {
-                        "content": "Technical Design"
-                    }
+            },
+            {
+                "id": 3,
+                "title": "PRACTICES",
+                "subtitle": "",
+                "isText": true,
+                "lists": [
+                    [
+                        {
+                            "content": "Test Driven Development"
+                        },
+                        {
+                            "content": "Scrum"
+                        },
+                        {
+                            "content": "Feature Design"
+                        },
+                        {
+                            "content": "Technical Design"
+                        },
+                        {
+                            "content": "Mentorship"
+                        }
+                    ]
                 ]
-            ]
-        }
-    ]
-}]
+            }
+        ]
+    }
+]
