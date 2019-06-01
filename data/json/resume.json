@@ -50,6 +50,15 @@
                     ],
                     [{
                             "isItalics": true,
+                            "content": "Software Engineer"
+                        },
+                        {
+                            "isItalics": false,
+                            "content": "Jun 2019 \u2014 Present"
+                        }
+                    ],
+                    [{
+                            "isItalics": true,
                             "content": "Associate Software Engineer"
                         },
                         {
