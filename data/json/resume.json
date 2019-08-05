@@ -77,10 +77,12 @@
                     ]
                 ],
                 "body": [
+                    "Serve as team Scrum Master by facilitating the scrum ceremonies, helping to resolve team impediments, and promoting agile values within the team",
                     "Contribute fully to SuiteCloud Development Framework product release cycle, including feature and technical design as well as implementations using Java, SQL, and Test Driven Development",
-                    "Lead efforts in better testing by representing scrum team in engineering unit testing meetings and promoting useful testing techniques like matchers, mocking, and other tools (the Platform Development Process team has one of the highest code coverage marks across all engineering teams)",
+                    "Lead efforts in better testing by representing scrum team in engineering unit testing meetings and promoting useful testing techniques like fluent and custom assertions, mocking, and other tools",
                     "Implement framework-wide refactors during sustainability periods in accordance with SOLID principles",
-                    "Develop fixes for customer issues in a timely manner following ERC guidelines",
+                    "Work with other Platform teams across multiple locations for cross-team dependent features, including driving communication and accountability",
+                    "Onboard new Platform team members and interns through training, guidance, and as a designated mentor",
                     "Participate in company pro bono program by volunteering up to 20 hours each quarter helping a nonprofit organization with their NetSuite implementation"
                 ]
             },
