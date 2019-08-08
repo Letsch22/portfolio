@@ -11,7 +11,7 @@
         "I used Laravel, a PHP framework, for the backend logic. Routing and logic held in controllers was written in PHP while migrations, queries, and models for the MySQL database were created using the Eloquent ORM. Authentication and registration of users is handled by Laravel Passport. Both web and API versions exist of every endpoint so that the frontend always has proper data whether directly navigating to a route or transitioning between routes while using the app.",
         "You should feel free to use listapp yourself to create some lists of your own. Or just browse the most popular lists to see if anything inspires you."
     ],
-    "modalSkills": ["Laravel", "Vue.js", "PHP", "JavaScript", "Eloquent ORM", "MySQL", "Node.js", "Laravel Passport", "Laravel Mix", "HTML", "CSS"],
+    "modalSkills": ["Laravel", "Vue.js", "PHP", "JavaScript", "Eloquent ORM", "MySQL", "Laravel Passport", "Laravel Mix", "HTML", "CSS"],
     "modalWhatFor": "I built this app in order to learn the complete process of building a full-stack web application. While previous projects of mine had touched various parts of the application stack, I had never implemented something from the ground-up that covered the entire spectrum of the frontend, backend, CRUD, authentication, deployment, and more. This project gave me the opportunity to do just that along with learning some frameworks and languages that were new to me.",
     "modalButtons": [{
         "link": "http://listapp.danielletscher.com/",

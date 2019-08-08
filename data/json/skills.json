@@ -52,10 +52,6 @@
                             "caption": "Vue.js"
                         },
                         {
-                            "content": "devicon-nodejs-plain",
-                            "caption": "Node.js"
-                        },
-                        {
                             "content": "devicon-laravel-plain",
                             "caption": "Laravel"
                         },
@@ -66,6 +62,10 @@
                         {
                             "content": "devicon-express-original",
                             "caption": "Express"
+                        },
+                        {
+                            "content": "devicon-nodejs-plain",
+                            "caption": "Node.js"
                         }
                     ]
                 ]
