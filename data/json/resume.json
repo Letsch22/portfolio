@@ -40,6 +40,27 @@
         "id": 2,
         "name": "Experience",
         "segments": [{
+                "title": "PATIENTPOP",
+                "lists": [
+                    [{
+                        "isItalics": false,
+                        "content": "Santa Monica, California",
+                        "icon": "marker"
+                    }
+                ],
+                [{
+                        "isItalics": true,
+                        "content": "Senior Backend Software Engineer"
+                    },
+                    {
+                        "isItalics": false,
+                        "content": "Nov 2019 \u2014 Present"
+                    }
+                ]
+            ],
+            "body": []
+            },
+            {
                 "title": "ORACLE",
                 "lists": [
                     [{
@@ -54,7 +75,7 @@
                         },
                         {
                             "isItalics": false,
-                            "content": "Jun 2019 \u2014 Present"
+                            "content": "Jun 2019 \u2014 Oct 2019"
                         }
                     ],
                     [{
