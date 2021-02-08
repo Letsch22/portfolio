@@ -112,6 +112,12 @@ body, html {
   display: block !important;
 }
 
+
+.ui.horizontal.list > .item> .icon, .ui.horizontal.list > .item > .icon + .content {
+  /* Fix for location icon not being on same line as location name */
+  display: table-cell !important;
+}
+
 .devicons > .item {
   font-size: 3em !important;
 }
