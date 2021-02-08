@@ -1,1 +1,1 @@
-Sitemap: http://danielletscher.com/sitemap.xml
+Sitemap: https://danielletscher.com/sitemap.xml
