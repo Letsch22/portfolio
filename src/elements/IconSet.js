@@ -2,20 +2,15 @@ import React, { Component } from "react";
 import Obfuscate from "react-obfuscate";
 import { Container, Icon, Menu, Responsive} from "semantic-ui-react";
 import PropTypes from "prop-types";
+import IconData from "./data/icons.json";
 
 class IconSet extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            icons: []
+            icons: IconData
         };
-    }
-
-    componentDidMount() {
-        fetch("/json/icons")
-            .then(res => res.json())
-            .then(icons => this.setState({icons}));
     }
 
     render() {

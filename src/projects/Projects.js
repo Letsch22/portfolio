@@ -2,23 +2,21 @@ import React, { Component } from "react";
 import { Card, Container, Header, Responsive, Transition, Visibility } from "semantic-ui-react";
 import ProjectCard from "./project/ProjectCard";
 import ProjectModal from "./project/ProjectModal";
+import ProjectsData from "./data/projects.json";
 
 class Projects extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { projects: [], visible: false };
+        this.state = {
+            projects: ProjectsData,
+            visible: false
+        };
         this.flipCards = this.flipCards.bind(this);
     }
 
     flipCards() {
         this.setState({ visible: true });
-    }
-
-    componentDidMount() {
-        fetch("/json/projects")
-            .then(res => res.json())
-            .then(projects => this.setState({projects}));
     }
 
     renderCard(project, i, isMobile) {
@@ -33,7 +31,7 @@ class Projects extends Component {
                 extra={project.extra}
                 extraIcon={project.extraIcon}
                 extraLink={project.extraLink}
-                mobile={isMobile}/>
+                mobile={isMobile} />
         );
     }
     renderModal(project, i) {
@@ -46,7 +44,7 @@ class Projects extends Component {
                 whatFor={project.modalWhatFor}
                 subheader={project.modalSubheader}
                 description={project.modalDescription}
-                buttons={project.modalButtons}/>
+                buttons={project.modalButtons} />
         );
     }
 

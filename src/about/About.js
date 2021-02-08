@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import { Grid, Header } from "semantic-ui-react";
+import AboutData from "./data/about.json";
 
 class About extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {about: []};
-    }
-
-    componentDidMount() {
-        fetch("/json/about")
-            .then(res => res.json())
-            .then(about => this.setState({about}));
+        this.state = {
+            about: AboutData
+        };
     }
 
     render() {
-        return(
+        return (
             <div id="about">
                 <Grid centered container>
                     <Grid.Column width={7} only="computer">

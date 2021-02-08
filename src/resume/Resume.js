@@ -3,24 +3,17 @@ import { Grid } from "semantic-ui-react";
 import ResumeSection from "./section/ResumeSection";
 import ResumeContent from "./section/content/ResumeContent";
 import SkillsContent from "./section/content/SkillsContent";
+import StandardSectionsData from "./data/resume.json";
+import SkillsSectionsData from "./data/skills.json";
 
 class Resume extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            standardSections: [],
-            skillsSections: []
+            standardSections: StandardSectionsData,
+            skillsSections: SkillsSectionsData
         };
-    }
-
-    componentDidMount() {
-        fetch("/json/resume")
-            .then(res => res.json())
-            .then(standardSections => this.setState({standardSections}));
-        fetch("/json/skills")
-            .then(res => res.json())
-            .then(skillsSections => this.setState({skillsSections}));
     }
 
     renderStandardSection(section) {
