@@ -6,7 +6,7 @@ class ProjectModal extends Component {
 
     renderButton(button, i) {
         return (
-            <Button key={i} href={button.link} icon={button.icon} content={button.name} size="large" color="grey" target="_blank"/>
+            <Button key={i} href={button.link} icon={button.icon} content={button.name} size="large" color="grey" target="_blank" rel="noreferrer"/>
         );
     }
 

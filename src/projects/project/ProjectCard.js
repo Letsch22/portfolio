@@ -40,7 +40,7 @@ class ProjectCard extends Component {
         if (this.props.extra != null) {
             computerExtra = (
                 <Card.Content extra>
-                    <a href={this.props.extraLink} target="_blank">
+                    <a href={this.props.extraLink} target="_blank" rel="noreferrer">
                         <Icon name={this.props.extraIcon}/>
                         {this.props.extra}
                     </a>
