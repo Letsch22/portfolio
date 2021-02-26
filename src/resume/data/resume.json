@@ -1,75 +1,95 @@
-[{
+[
+    {
         "id": 1,
         "name": "Education",
-        "segments": [{
-            "title": "NORTHWESTERN UNIVERSITY",
-            "lists": [
-                [{
-                        "isItalics": false,
-                        "content": "Evanston, Illinois",
-                        "icon": "marker"
-                    }
-                ],
-                [{
-                        "isItalics": true,
-                        "content": "Bachelor of Arts"
-                    },
-                    {
-                        "isItalics": false,
-                        "content": "Sep 2013 \u2014 Jun 2017"
-                    }
-                ],
-                [{
-                        "isItalics": false,
-                        "content": "Computer Science major"
-                    },
-                    {
-                        "isItalics": false,
-                        "content": "Economics minor"
-                    },
-                    {
-                        "isItalics": false,
-                        "content": "3.7 GPA"
-                    }
+        "segments": [
+            {
+                "title": "NORTHWESTERN UNIVERSITY",
+                "lists": [
+                    [
+                        {
+                            "isItalics": false,
+                            "content": "Evanston, Illinois",
+                            "icon": "marker"
+                        }
+                    ],
+                    [
+                        {
+                            "isItalics": true,
+                            "content": "Bachelor of Arts"
+                        },
+                        {
+                            "isItalics": false,
+                            "content": "Sep 2013 \u2014 Jun 2017"
+                        }
+                    ],
+                    [
+                        {
+                            "isItalics": false,
+                            "content": "Computer Science major"
+                        },
+                        {
+                            "isItalics": false,
+                            "content": "Economics minor"
+                        },
+                        {
+                            "isItalics": false,
+                            "content": "3.7 GPA"
+                        }
+                    ]
                 ]
-
-            ]
-        }]
+            }
+        ]
     },
     {
         "id": 2,
         "name": "Experience",
-        "segments": [{
+        "segments": [
+            {
                 "title": "PATIENTPOP",
                 "lists": [
-                    [{
-                        "isItalics": false,
-                        "content": "Santa Monica, California",
-                        "icon": "marker"
-                    }
+                    [
+                        {
+                            "isItalics": false,
+                            "content": "Santa Monica, California",
+                            "icon": "marker"
+                        }
+                    ],
+                    [
+                        {
+                            "isItalics": true,
+                            "content": "Senior Software Engineer"
+                        },
+                        {
+                            "isItalics": false,
+                            "content": "Feb 2021 \u2014 Present"
+                        }
+                    ],
+                    [
+                        {
+                            "isItalics": true,
+                            "content": "Software Engineer II"
+                        },
+                        {
+                            "isItalics": false,
+                            "content": "Nov 2019 \u2014 Feb 2021"
+                        }
+                    ]
                 ],
-                [{
-                        "isItalics": true,
-                        "content": "Senior Backend Software Engineer"
-                    },
-                    {
-                        "isItalics": false,
-                        "content": "Nov 2019 \u2014 Present"
-                    }
-                ]
-            ],
-            "body": []
+                "body": []
             },
             {
                 "title": "ORACLE",
                 "lists": [
-                    [{
+                    [
+                        {
                             "isItalics": false,
                             "content": "Redwood Shores, California",
                             "icon": "marker"
                         }
                     ],
-                    [{
+                    [
+                        {
                             "isItalics": true,
                             "content": "Software Engineer"
                         },
@@ -78,7 +98,8 @@
                             "content": "Jun 2019 \u2014 Oct 2019"
                         }
                     ],
-                    [{
+                    [
+                        {
                             "isItalics": true,
                             "content": "Associate Software Engineer"
                         },
@@ -87,7 +108,8 @@
                             "content": "Aug 2017 \u2014 May 2019"
                         }
                     ],
-                    [{
+                    [
+                        {
                             "isItalics": false,
                             "content": "NetSuite Global Business Unit"
                         },
@@ -110,13 +132,15 @@
             {
                 "title": "NETSUITE",
                 "lists": [
-                    [{
+                    [
+                        {
                             "isItalics": false,
                             "content": "San Mateo, California",
                             "icon": "marker"
                         }
                     ],
-                    [{
+                    [
+                        {
                             "isItalics": true,
                             "content": "Software Engineering Intern"
                         },
@@ -125,10 +149,12 @@
                             "content": "Jun 2016 \u2014 Sep 2016"
                         }
                     ],
-                    [{
-                        "isItalics": false,
-                        "content": "Platform Development Process Team"
-                    }]
+                    [
+                        {
+                            "isItalics": false,
+                            "content": "Platform Development Process Team"
+                        }
+                    ]
                 ],
                 "body": [
                     "Designed and implemented, using Java and SQL, server-side API and client-side tool that customers use to convert ERP and CRM account customizations built under old bundle framework to newly-released application development framework",
@@ -138,13 +164,15 @@
             {
                 "title": "EXOSITE",
                 "lists": [
-                    [{
+                    [
+                        {
                             "isItalics": false,
                             "content": "Minneapolis, Minnesota",
                             "icon": "marker"
                         }
                     ],
-                    [{
+                    [
+                        {
                             "isItalics": true,
                             "content": "Support Services Intern"
                         },
